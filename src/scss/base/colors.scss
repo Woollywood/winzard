@@ -1,0 +1,47 @@
+$colors_theme: (
+	'primary': 'white',
+	'secondary': 'black',
+);
+
+$colors: (
+	'white-1': #fff,
+	'white-2': #f5f8ff,
+	'black-1': #000,
+	'black-2': #111623,
+	'black-3': #1c2436,
+	'black-4': #0e121d,
+	'grey-1': #576081,
+	'grey-2': #171e2f,
+	'grey-3': #7881a1,
+	'purple-1': #9186ff,
+	'purple-2': #6d61ff,
+	'blue-1': #574aff,
+);
+
+@function HexToRGB($hex) {
+	@return red($hex), green($hex), blue($hex);
+}
+
+@function cl($name, $opacity: false) {
+	@if $opacity {
+		@return rgba(var(--color-#{unquote($name)}--rgb), $opacity);
+	} @else {
+		@return var(--color-#{unquote($name)});
+	}
+}
+
+:root {
+	@if $colors {
+		@if $colors_theme {
+			@each $key, $value in $colors_theme {
+				--color-#{$key}: var(--color-#{$value});
+				--color-#{$key}--rgb: var(--color-#{$value}--rgb);
+			}
+		}
+
+		@each $key, $value in $colors {
+			--color-#{$key}: #{$value};
+			--color-#{$key}--rgb: #{HexToRGB($value)};
+		}
+	}
+}

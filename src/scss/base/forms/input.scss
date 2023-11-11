@@ -1,0 +1,64 @@
+//<INPUT>
+// Сниппет (HTML): inp
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.input-wrapper {
+	@include adaptiveValue("padding-top", 20, 10, 0, 1920, 375);
+	@include adaptiveValue("padding-bottom", 20, 10, 0, 1920, 375);
+	@include adaptiveValue("padding-left", 20, 16, 0, 1920, 375);
+	@include adaptiveValue("padding-right", 20, 16, 0, 1920, 375);
+	border-radius: rem(10);
+	border: rem(1) solid cl('white-1', 0.04);
+	background: cl('black-2');
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input,
+textarea {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+
+	color: cl('grey-1');
+	@include adaptiveValue("font-size", 14, 12, 0, 1920, 375);
+	font-weight: 500;
+	line-height: 142%;
+	letter-spacing: 0.1px;
+
+	&::placeholder {
+		color: cl('grey-1');
+		@include adaptiveValue("font-size", 14, 12, 0, 1920, 375);
+		font-weight: 500;
+		line-height: 142%;
+		letter-spacing: 0.1px;
+	}
+
+	&._form-focus {
+	}
+	&._form-error {
+	}
+}
+
+.input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}

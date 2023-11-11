@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"HomePage" })
+
+	<body class="body" id="body">
+		<div class="login_window_container">
+			<div class="login_window">
+				<div class="login_window-header">
+					<div class="login_window-header-leftSide">
+						<div class="login_window-header-logotype-image"></div>
+						<span class="login_window-header-logotype-text">WINZARD</span>
+					</div>
+					<div class="login_window-header-rightSide">
+						<span class="login_window-header-close">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="10"
+								height="10"
+								viewBox="0 0 10 10"
+								fill="none">
+								<path
+									d="M0.27955 0.27955C0.458599 0.100554 0.701411 0 0.954587 0C1.20776 0 1.45057 0.100554 1.62962 0.27955L5.00576 3.65569L8.3819 0.27955C8.56198 0.105627 8.80316 0.00938937 9.05351 0.0115648C9.30385 0.0137402 9.54332 0.114155 9.72035 0.291181C9.89737 0.468206 9.99779 0.70768 9.99996 0.958023C10.0021 1.20837 9.9059 1.44955 9.73198 1.62962L6.35584 5.00576L9.73198 8.3819C9.9059 8.56198 10.0021 8.80316 9.99996 9.05351C9.99779 9.30385 9.89737 9.54332 9.72035 9.72035C9.54332 9.89737 9.30385 9.99779 9.05351 9.99996C8.80316 10.0021 8.56198 9.9059 8.3819 9.73198L5.00576 6.35584L1.62962 9.73198C1.44955 9.9059 1.20837 10.0021 0.958023 9.99996C0.70768 9.99779 0.468206 9.89737 0.291181 9.72035C0.114155 9.54332 0.0137402 9.30385 0.0115648 9.05351C0.00938937 8.80316 0.105627 8.56198 0.27955 8.3819L3.65569 5.00576L0.27955 1.62962C0.100554 1.45057 0 1.20776 0 0.954587C0 0.701411 0.100554 0.458599 0.27955 0.27955Z"
+									fill="#576081" />
+							</svg>
+						</span>
+					</div>
+				</div>
+
+				<div class="login_window-switcher">
+					<div class="login_window-switcher_buttons">
+						<button class="login_window-header-switcher-button" id="headerWindowAuthRegisterButton">
+							Register
+						</button>
+						<button class="login_window-header-switcher-button active" id="headerWindowAuthLoginButton">
+							Log in
+						</button>
+					</div>
+				</div>
+
+				<form method="POST" class="login_window-form" id="headerWindowAuthLoginForm">
+					<input type="hidden" name="_token" value="obybESdNbjRkbsePKmv5aSFqKmQ65KJKPSOYCRXU" />
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Email or Username</label>
+						<input type="text" class="login_window-form-input" name="login" id="login_window-form_login" />
+					</div>
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Password</label>
+						<input
+							type="password"
+							class="login_window-form-input"
+							name="password"
+							id="login_window-form_password" />
+					</div>
+
+					<a href="" class="login_window-form-forgot_password">Forgot password?</a>
+
+					<span class="login_window-form-error-text"></span>
+
+					<button class="login_window-form_submit" id="login_window-form_submit">Log in</button>
+				</form>
+
+				<form method="POST" class="login_window-form" id="headerWindowAuthRegisterForm">
+					<input type="hidden" name="_token" value="obybESdNbjRkbsePKmv5aSFqKmQ65KJKPSOYCRXU" />
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Email address</label>
+						<input type="email" class="login_window-form-input" name="email" id="login_window-form_login" />
+					</div>
+
+					<div class="headerWindowRegisterRowInputs">
+						<div class="accountSettings-form-group">
+							<label for="">Phone Number</label>
+							<div class="input-account-settings double">
+								<span class="edit left"> <img src="/resources/images/country.png" alt="" /> +1 </span>
+								<input type="text" class="input-account-settings" placeholder="" />
+							</div>
+						</div>
+						<div class="accountSettings-form-group">
+							<label for="">Country Code</label>
+							<div class="input-account-settings double">
+								<span class="edit left"> <img src="/resources/images/country.png" alt="" /> +1 </span>
+								<input type="text" class="input-account-settings" placeholder="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Username</label>
+						<input
+							type="text"
+							class="login_window-form-input"
+							name="username"
+							id="login_window-form_login" />
+					</div>
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Password</label>
+						<input
+							type="password"
+							class="login_window-form-input"
+							name="password"
+							id="login_window-form_password" />
+					</div>
+
+					<span class="login_window-form-error-text"></span>
+
+					<button class="login_window-form_submit" id="register_window-form_submit">Register</button>
+				</form>
+			</div>
+			<div class="login_window-overlay"></div>
+		</div>
+
+		<section class="body-content">
+			<div class="navigation-overlay-mobile"></div>
+			@@include('html/_navigation.htm',{})
+			<section class="content">
+				@@include('html/_header.htm',{})
+
+				<!-- Custom code here -->
+				<section class="contact">
+					<div class="contact__container">
+						<div class="contact__body">
+							<div class="contact__block">
+								<h2 class="contact__title title-h2">Contact us</h2>
+								<div class="contact__row">
+									<div class="contact__col">
+										<form class="form-contact">
+											<div class="form-contact__input-wrapper input-wrapper">
+												<input type="text" placeholder="Your Name" />
+											</div>
+											<div class="form-contact__input-wrapper input-wrapper">
+												<input type="email" placeholder="Your E-mail" />
+											</div>
+											<div
+												class="form-contact__input-wrapper form-contact__input-wrapper--textarea input-wrapper">
+												<textarea type="text" placeholder="Your Message"></textarea>
+												<button class="button">Submit</button>
+											</div>
+										</form>
+									</div>
+									<div class="contact__col">
+										<div class="info-contact">
+											<div class="info-contact__inner">
+												<h3 class="info-contact__title">Support Contact Information</h3>
+												<div class="info-contact__text-wrapper">
+													<a
+														class="info-contact__text-wrapper-row"
+														href="mailto:support@mail.me">
+														<span class="info-contact__text-left">E-mail: </span>
+														<span class="info-contact__text-right">support@mail.me</span>
+													</a>
+													<a class="info-contact__text-wrapper-row" href="tel:+17271231243">
+														<span class="info-contact__text-left">Phone: </span>
+														<span class="info-contact__text-right">+1 727 123 1243</span>
+													</a>
+												</div>
+												<button
+													class="info-contact__button button-secondary button-secondary--icon-stroke">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#chat"></use>
+													</svg>
+													<span>Live Chat Support</span>
+												</button>
+											</div>
+											<div class="info-contact__background-ibg">
+												<img src="@img/contact/vip.png" alt="background" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contact__block">
+								<h2 class="contact__title title-h2">FAQ</h2>
+								<div class="contact__accordion-container accordion-container">
+									<div class="accordion-wrapper">
+										<div class="accordion">
+											<h2 class="accordion__header">
+												<button type="button" class="accordion__trigger">
+													<span class="accordion__header-text"
+														>How to become a part of the VIP Club?</span
+													>
+													<span class="accordion__header-icon-wrapper">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#chevron-down"></use>
+														</svg>
+													</span>
+												</button>
+											</h2>
+											<div class="accordion__panel">
+												<p class="accordion__panel-text">
+													The are several reasons for it.It’s either you haven’t played on
+													Winzard for a long period of time or you became a VIP Club member
+													less than a week ago and it didn’t accumulate yet. Weekly bonuses
+													are sent out each Monday and monthly on the 1st of each month.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-wrapper">
+										<div class="accordion">
+											<h2 class="accordion__header">
+												<button type="button" class="accordion__trigger">
+													<span class="accordion__header-text"
+														>I am a member and I haven’t received any bonus yet. Why? When
+														are they sent to the users and how often?</span
+													>
+													<span class="accordion__header-icon-wrapper">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#chevron-down"></use>
+														</svg>
+													</span>
+												</button>
+											</h2>
+											<div class="accordion__panel">
+												<p class="accordion__panel-text">
+													The are several reasons for it.It’s either you haven’t played on
+													Winzard for a long period of time or you became a VIP Club member
+													less than a week ago and it didn’t accumulate yet. Weekly bonuses
+													are sent out each Monday and monthly on the 1st of each month.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-wrapper">
+										<div class="accordion">
+											<h2 class="accordion__header">
+												<button type="button" class="accordion__trigger">
+													<span class="accordion__header-text"
+														>I want to become a part of the VIP Club, but I haven’t reached
+														Rank 13. What should I do?</span
+													>
+													<span class="accordion__header-icon-wrapper">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#chevron-down"></use>
+														</svg>
+													</span>
+												</button>
+											</h2>
+											<div class="accordion__panel">
+												<p class="accordion__panel-text">
+													The are several reasons for it.It’s either you haven’t played on
+													Winzard for a long period of time or you became a VIP Club member
+													less than a week ago and it didn’t accumulate yet. Weekly bonuses
+													are sent out each Monday and monthly on the 1st of each month.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-wrapper">
+										<div class="accordion">
+											<h2 class="accordion__header">
+												<button type="button" class="accordion__trigger">
+													<span class="accordion__header-text"
+														>What does affect the weekly/monthly bonus?</span
+													>
+													<span class="accordion__header-icon-wrapper">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#chevron-down"></use>
+														</svg>
+													</span>
+												</button>
+											</h2>
+											<div class="accordion__panel">
+												<p class="accordion__panel-text">
+													The are several reasons for it.It’s either you haven’t played on
+													Winzard for a long period of time or you became a VIP Club member
+													less than a week ago and it didn’t accumulate yet. Weekly bonuses
+													are sent out each Monday and monthly on the 1st of each month.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+		@@include('html/_footer.htm',{}) @@include('html/_mobile-menu.htm',{})@@include('html/_js.htm',{})
+
+		<!-- Initialize Swiper -->
+
+		<script>
+			$(document).ready(function () {
+				$('select').each(function () {
+					var $this = $(this),
+						numberOfOptions = $(this).children('option').length;
+
+					$this.addClass('select-hidden');
+					$this.wrap('<div class="select"></div>');
+					$this.after('<div class="select-styled"></div>');
+
+					var $styledSelect = $this.next('div.select-styled');
+					$styledSelect.text($this.children('option').eq(0).text());
+
+					var $list = $('<ul />', {
+						class: 'select-options',
+					}).insertAfter($styledSelect);
+
+					for (var i = 0; i < numberOfOptions; i++) {
+						$('<li />', {
+							text: $this.children('option').eq(i).text(),
+							rel: $this.children('option').eq(i).val(),
+						}).appendTo($list);
+						if ($this.children('option').eq(i).is(':selected')) {
+							$('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected');
+						}
+					}
+
+					var $listItems = $list.children('li');
+
+					$styledSelect.click(function (e) {
+						e.stopPropagation();
+						$('div.select-styled.active')
+							.not(this)
+							.each(function () {
+								$(this).removeClass('active').next('ul.select-options').hide();
+							});
+						$(this).toggleClass('active').next('ul.select-options').toggle();
+					});
+
+					$listItems.click(function (e) {
+						e.stopPropagation();
+						$styledSelect.text($(this).text()).removeClass('active');
+						$this.val($(this).attr('rel'));
+						$list.find('li.is-selected').removeClass('is-selected');
+						$list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+						$list.hide();
+
+						var currentUrl = window.location.href;
+						var parts = currentUrl.split('/');
+						var currentLanguage = '/' + parts[3];
+						var newUrl = currentUrl.replace(currentLanguage, '/' + $(this).attr('rel'));
+						window.location.href = newUrl;
+						//console.log($this.val());
+					});
+				});
+
+				$('#toggle_menu_button').on('click', function () {
+					$('#navigation').fadeToggle();
+					$('.navigation-overlay-mobile').fadeToggle();
+				});
+				$('.navigation-overlay-mobile').on('click', function () {
+					$('#navigation').fadeToggle();
+					$('.navigation-overlay-mobile').fadeToggle();
+				});
+
+				$('.login_window-overlay').on('click', function () {
+					$('.login_window_container').fadeOut();
+				});
+				$('.login_window-header-close').on('click', function () {
+					$('.login_window_container').fadeOut();
+				});
+
+				$('#register_window-form_submit').on('click', function (e) {
+					e.preventDefault();
+				});
+				$('#login_window-form_submit').on('click', function (e) {
+					e.preventDefault();
+
+					let data = {
+						login: $('#login_window-form_login').val(),
+						password: $('#login_window-form_password').val(),
+					};
+
+					fetch('/api/auth/login', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify(data),
+					})
+						.then((response) => response.json())
+						.then((response) => {
+							console.log(response);
+
+							if (response.status === 400) {
+								$('.login_window-form-error-text').text(response.error);
+							} else if (response.status === 200) {
+								// localStorage.token = response.token;
+								// window.location = "/";
+
+								$('#headerWindowAuthLoginForm').submit();
+							} else {
+								$('.login_window-form-error-text').text('Error...');
+							}
+						});
+				});
+
+				$('#log_in_button').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'none');
+					$('#headerWindowAuthLoginForm').css('display', 'block');
+
+					$('#headerWindowAuthLoginButton').addClass('active');
+					$('#headerWindowAuthRegisterButton').removeClass('active');
+
+					$('.login_window_container').fadeIn();
+				});
+				$('#register_in_button').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'block');
+					$('#headerWindowAuthLoginForm').css('display', 'none');
+
+					$('#headerWindowAuthRegisterButton').addClass('active');
+					$('#headerWindowAuthLoginButton').removeClass('active');
+
+					$('.login_window_container').fadeIn();
+				});
+
+				$('#headerWindowAuthRegisterButton').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'block');
+					$('#headerWindowAuthLoginForm').css('display', 'none');
+					$(this).addClass('active');
+					$('#headerWindowAuthLoginButton').removeClass('active');
+				});
+				$('#headerWindowAuthLoginButton').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'none');
+					$('#headerWindowAuthLoginForm').css('display', 'block');
+					$(this).addClass('active');
+					$('#headerWindowAuthRegisterButton').removeClass('active');
+				});
+
+				$('.select-styled').removeClass('active');
+				$('.select-options').css('display', 'none');
+			});
+		</script>
+	</body>
+</html>

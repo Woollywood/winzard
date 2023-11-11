@@ -1,0 +1,10 @@
+//Заголовки, общие БЭМ блоки и т.д.
+
+.title-h2 {
+	color: cl('white-2');
+	text-shadow: 1px 2px 20px cl('black-1', 0.3);
+	@include adaptiveValue('font-size', 24, 20, 0, 1920, 375);
+	font-weight: 700;
+	line-height: 166%;
+	text-transform: uppercase;
+}
