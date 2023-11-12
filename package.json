@@ -1,11 +1,11 @@
 {
-	"name": "gulp-template",
+	"name": "winzard",
 	"version": "1.0",
 	"description": "Start template with Gulp and Webpack",
 	"private": true,
 	"license": "",
 	"type": "module",
-	"homepage": "https://Woollywood.github.io/gulp-template",
+	"homepage": "https://Woollywood.github.io/winzard",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
