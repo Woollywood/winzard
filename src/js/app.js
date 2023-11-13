@@ -209,6 +209,8 @@ import * as flsScroll from './custom/scroll.js';
 // Скроллинг страницы
 import './libs/scroll/scrollController.js';
 
+import './libs/splitType.js';
+
 // Плавная навигация по странице
 // Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
 // flsScroll.pageNavigation();

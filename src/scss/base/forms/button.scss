@@ -5,10 +5,10 @@
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	@include adaptiveValue("padding-top", 10, 8, 0, 1920, 375);
-	@include adaptiveValue("padding-bottom", 10, 8, 0, 1920, 375);
-	@include adaptiveValue("padding-left", 32, 24, 0, 1920, 375);
-	@include adaptiveValue("padding-right", 32, 24, 0, 1920, 375);
+	@include adaptiveValue('padding-top', 10, 8, 0, 1920, 375);
+	@include adaptiveValue('padding-bottom', 10, 8, 0, 1920, 375);
+	@include adaptiveValue('padding-left', 32, 24, 0, 1920, 375);
+	@include adaptiveValue('padding-right', 32, 24, 0, 1920, 375);
 	border-radius: rem(10);
 	background-color: cl('grey-2');
 
@@ -25,12 +25,23 @@
 	align-items: center;
 	gap: rem(8);
 	border-radius: rem(10);
-	@include adaptiveValue("padding-top", 12, 10, 0, 1920, 375);
-	@include adaptiveValue("padding-bottom", 12, 10, 0, 1920, 375);
-	@include adaptiveValue("padding-left", 32, 20, 0, 1920, 375);
-	@include adaptiveValue("padding-right", 32, 20, 0, 1920, 375);
-	background: radial-gradient(155.2% 155.87% at 31.94% -11.82%, cl('purple-1') 0%, cl('purple-2') 33.87%, cl('blue-1') 91.62%);
+	@include adaptiveValue('padding-top', 12, 10, 0, 1920, 375);
+	@include adaptiveValue('padding-bottom', 12, 10, 0, 1920, 375);
+	@include adaptiveValue('padding-left', 32, 20, 0, 1920, 375);
+	@include adaptiveValue('padding-right', 32, 20, 0, 1920, 375);
+	background: radial-gradient(
+		155.2% 155.87% at 31.94% -11.82%,
+		cl('purple-1') 0%,
+		cl('purple-2') 33.87%,
+		cl('blue-1') 91.62%
+	);
 	box-shadow: 0px 8px 12px 0px cl('black-1', 0.02);
+
+	color: cl('white-2');
+	text-shadow: 0px 4px 12px cl('black-1', 0.12);
+	@include adaptiveValue('font-size', 16, 14, 0, 1920, 568);
+	font-weight: 500;
+	line-height: 142%;
 
 	svg {
 		flex: 0 0 rem(24);
@@ -39,18 +50,31 @@
 		fill: cl('white-2');
 	}
 
-	span {
-		color: cl('white-2');
-		text-shadow: 0px 4px 12px cl('black-1', 0.12);
-		font-size: rem(14);
-		font-weight: 500;
-		line-height: 142%;
-	}
-
 	&--icon-stroke {
 		svg {
 			fill: transparent;
 			stroke: cl('white-2');
 		}
 	}
+}
+
+.button-blur {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: rem(8);
+
+	@include adaptiveValue('padding-top', 12, 10, 0, 1920, 375);
+	@include adaptiveValue('padding-bottom', 12, 10, 0, 1920, 375);
+	@include adaptiveValue('padding-left', 32, 20, 0, 1920, 375);
+	@include adaptiveValue('padding-right', 32, 20, 0, 1920, 375);
+
+	border-radius: rem(16);
+	border: rem(1) solid cl('grey-5');
+	background: linear-gradient(270deg, rgba(23, 30, 47, 0.24) 0%, rgba(23, 30, 47, 0.24) 100%);
+	backdrop-filter: blur(12px);
+
+	color: cl('grey-4');
+	text-shadow: 0px 4px 12px cl('black-1', 0.12);
+	@include adaptiveValue('font-size', 16, 14, 0, 1920, 568);
 }

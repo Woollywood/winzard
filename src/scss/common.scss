@@ -15,3 +15,10 @@
 	@include adaptiveValue('padding-left', 200, 20, 0, 1920, 768);
 	padding-bottom: rem(60);
 }
+
+.content-container-secondary {
+	padding-top: rem(30);
+	@include adaptiveValue('padding-right', 120, 20, 0, 1920, 768);
+	@include adaptiveValue('padding-left', 40, 20, 0, 1920, 768);
+	padding-bottom: rem(60);
+}
