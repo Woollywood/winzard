@@ -616,82 +616,6 @@ a {
 
 /*//////////////////////////////////////////////*/
 
-body:not(body[swiper-assets-reset]) .swiper {
-  width: 100%;
-  /*height: %;*/
-}
-
-body:not(body[swiper-assets-reset]) .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  padding: 60px 120px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body:not(body[swiper-assets-reset]) .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-body:not(body[swiper-assets-reset]) .swiper-slide-offer {
-  display: block;
-  color: #f5f8ff;
-  /* #1 */
-  text-shadow: 1px 2px 20px rgba(0, 0, 0, 0.3);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 140%;
-  /* 56px */
-  text-transform: uppercase;
-  width: 500px;
-  text-align: left;
-}
-
-body:not(body[swiper-assets-reset]) .swiper-slide-underOffer {
-  color: #7f88a8;
-  -webkit-font-feature-settings: "clig" off, "liga" off;
-          font-feature-settings: "clig" off, "liga" off;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  /* 125% */
-  letter-spacing: 0.1px;
-  text-align: left;
-  display: block;
-  margin-top: 10px;
-}
-
-body:not(body[swiper-assets-reset]) .swiper-slide-button-get-bonus {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 10px;
-  background: -o-linear-gradient(305deg, #ec8d48 -0.24%, #ec742d 33.14%, #ed683e 98.36%);
-  background: linear-gradient(145deg, #ec8d48 -0.24%, #ec742d 33.14%, #ed683e 98.36%);
-  /* #1 */
-  -webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.02);
-          box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.02);
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  /* 125% */
-  padding: 16px 40px;
-  display: block;
-  margin-top: 30px;
-}
-
 .banners-item {
   height: 282px;
   width: 32%;
@@ -5809,6 +5733,10 @@ textarea.input {
 
 .support-main__field:not(:last-child) {
   margin-bottom: 0.75rem;
+}
+
+.games-wrapper {
+  margin: 4.125rem 0;
 }
 
 .tippy-content {
