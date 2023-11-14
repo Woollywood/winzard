@@ -4521,6 +4521,7 @@ textarea.input {
 }
 
 .club-rank {
+  overflow: hidden;
   margin-top: -5%;
 }
 
