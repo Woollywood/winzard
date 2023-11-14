@@ -3,6 +3,7 @@ function initSliders() {
 		new Swiper(".games-slider", {
 			observer: true,
 			observeParents: true,
+			spaceBetween: 16,
 			speed: 800,
 
 			navigation: {
@@ -20,7 +21,6 @@ function initSliders() {
 				},
 				992: {
 					slidesPerView: 5,
-					spaceBetween: 16,
 				},
 				1268: {
 					slidesPerView: 6,
@@ -33,6 +33,7 @@ function initSliders() {
 		new Swiper(".providers-slider", {
 			observer: true,
 			observeParents: true,
+			spaceBetween: 16,
 			speed: 800,
 
 			navigation: {
@@ -50,7 +51,6 @@ function initSliders() {
 				},
 				992: {
 					slidesPerView: 5,
-					spaceBetween: 16,
 				},
 				1268: {
 					slidesPerView: 6,
