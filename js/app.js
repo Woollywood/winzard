@@ -272,6 +272,7 @@
             if (document.querySelector(".games-slider")) new Swiper(".games-slider", {
                 observer: true,
                 observeParents: true,
+                spaceBetween: 16,
                 speed: 800,
                 navigation: {
                     prevEl: ".game-launcher__slider-wrapper--games-slider .slider-arrows__arrow-prev",
@@ -286,8 +287,7 @@
                         slidesPerView: 4
                     },
                     992: {
-                        slidesPerView: 5,
-                        spaceBetween: 16
+                        slidesPerView: 5
                     },
                     1268: {
                         slidesPerView: 6
@@ -297,6 +297,7 @@
             if (document.querySelector(".providers-slider")) new Swiper(".providers-slider", {
                 observer: true,
                 observeParents: true,
+                spaceBetween: 16,
                 speed: 800,
                 navigation: {
                     prevEl: ".game-launcher__slider-wrapper--providers-slider .slider-arrows__arrow-prev",
@@ -311,8 +312,7 @@
                         slidesPerView: 4
                     },
                     992: {
-                        slidesPerView: 5,
-                        spaceBetween: 16
+                        slidesPerView: 5
                     },
                     1268: {
                         slidesPerView: 6
