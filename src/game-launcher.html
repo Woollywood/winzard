@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"HomePage" })
+
+	<body class="body" id="body" swiper-assets-reset>
+		<div class="login_window_container">
+			<div class="login_window">
+				<div class="login_window-header">
+					<div class="login_window-header-leftSide">
+						<div class="login_window-header-logotype-image"></div>
+						<span class="login_window-header-logotype-text">WINZARD</span>
+					</div>
+					<div class="login_window-header-rightSide">
+						<span class="login_window-header-close">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="10"
+								height="10"
+								viewBox="0 0 10 10"
+								fill="none">
+								<path
+									d="M0.27955 0.27955C0.458599 0.100554 0.701411 0 0.954587 0C1.20776 0 1.45057 0.100554 1.62962 0.27955L5.00576 3.65569L8.3819 0.27955C8.56198 0.105627 8.80316 0.00938937 9.05351 0.0115648C9.30385 0.0137402 9.54332 0.114155 9.72035 0.291181C9.89737 0.468206 9.99779 0.70768 9.99996 0.958023C10.0021 1.20837 9.9059 1.44955 9.73198 1.62962L6.35584 5.00576L9.73198 8.3819C9.9059 8.56198 10.0021 8.80316 9.99996 9.05351C9.99779 9.30385 9.89737 9.54332 9.72035 9.72035C9.54332 9.89737 9.30385 9.99779 9.05351 9.99996C8.80316 10.0021 8.56198 9.9059 8.3819 9.73198L5.00576 6.35584L1.62962 9.73198C1.44955 9.9059 1.20837 10.0021 0.958023 9.99996C0.70768 9.99779 0.468206 9.89737 0.291181 9.72035C0.114155 9.54332 0.0137402 9.30385 0.0115648 9.05351C0.00938937 8.80316 0.105627 8.56198 0.27955 8.3819L3.65569 5.00576L0.27955 1.62962C0.100554 1.45057 0 1.20776 0 0.954587C0 0.701411 0.100554 0.458599 0.27955 0.27955Z"
+									fill="#576081" />
+							</svg>
+						</span>
+					</div>
+				</div>
+
+				<div class="login_window-switcher">
+					<div class="login_window-switcher_buttons">
+						<button class="login_window-header-switcher-button" id="headerWindowAuthRegisterButton">
+							Register
+						</button>
+						<button class="login_window-header-switcher-button active" id="headerWindowAuthLoginButton">
+							Log in
+						</button>
+					</div>
+				</div>
+
+				<form method="POST" class="login_window-form" id="headerWindowAuthLoginForm">
+					<input type="hidden" name="_token" value="obybESdNbjRkbsePKmv5aSFqKmQ65KJKPSOYCRXU" />
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Email or Username</label>
+						<input type="text" class="login_window-form-input" name="login" id="login_window-form_login" />
+					</div>
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Password</label>
+						<input
+							type="password"
+							class="login_window-form-input"
+							name="password"
+							id="login_window-form_password" />
+					</div>
+
+					<a href="" class="login_window-form-forgot_password">Forgot password?</a>
+
+					<span class="login_window-form-error-text"></span>
+
+					<button class="login_window-form_submit" id="login_window-form_submit">Log in</button>
+				</form>
+
+				<form method="POST" class="login_window-form" id="headerWindowAuthRegisterForm">
+					<input type="hidden" name="_token" value="obybESdNbjRkbsePKmv5aSFqKmQ65KJKPSOYCRXU" />
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Email address</label>
+						<input type="email" class="login_window-form-input" name="email" id="login_window-form_login" />
+					</div>
+
+					<div class="headerWindowRegisterRowInputs">
+						<div class="accountSettings-form-group">
+							<label for="">Phone Number</label>
+							<div class="input-account-settings double">
+								<span class="edit left"> <img src="/resources/images/country.png" alt="" /> +1 </span>
+								<input type="text" class="input-account-settings" placeholder="" />
+							</div>
+						</div>
+						<div class="accountSettings-form-group">
+							<label for="">Country Code</label>
+							<div class="input-account-settings double">
+								<span class="edit left"> <img src="/resources/images/country.png" alt="" /> +1 </span>
+								<input type="text" class="input-account-settings" placeholder="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Username</label>
+						<input
+							type="text"
+							class="login_window-form-input"
+							name="username"
+							id="login_window-form_login" />
+					</div>
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Password</label>
+						<input
+							type="password"
+							class="login_window-form-input"
+							name="password"
+							id="login_window-form_password" />
+					</div>
+
+					<span class="login_window-form-error-text"></span>
+
+					<button class="login_window-form_submit" id="register_window-form_submit">Register</button>
+				</form>
+			</div>
+			<div class="login_window-overlay"></div>
+		</div>
+
+		<section class="body-content">
+			<div class="navigation-overlay-mobile"></div>
+			@@include('html/_navigation.htm',{})
+			<section class="content">
+				@@include('html/_header.htm',{})
+
+				<!-- Custom code here -->
+				<section class="game-launcher">
+					<div class="game-launcher__container content-container">
+						<div class="game-launcher__body">
+							<div class="game-launcher__top">
+								<a class="game-launcher__back" href="#">
+									<div class="game-launcher__back-icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="18"
+											height="16"
+											viewBox="0 0 18 16"
+											fill="none">
+											<path
+												d="M17 9C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7V9ZM0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM17 7L1 7V9L17 9V7Z"
+												fill="#576081" />
+										</svg>
+									</div>
+									<div class="game-launcher__back-text">Back to games</div>
+								</a>
+								<h2 class="game-launcher__title title-h2">Tiny Gods</h2>
+								<div class="game-launcher__actions">
+									<button class="game-launcher__action game-launcher__action--icon-fill">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#star"></use>
+										</svg>
+									</button>
+									<button class="game-launcher__action game-launcher__action--icon-fill">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#info"></use>
+										</svg>
+									</button>
+									<button class="game-launcher__action">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#fullscreen"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="game-launcher__banner">
+								<div class="game-launcher__banner-background-ibg">
+									<img src="@img/game-launcher/banner-background.jpg" alt="background" />
+									<img class="mobile" src="@img/game-launcher/banner-background--mobile.jpg" alt="background" />
+								</div>
+							</div>
+							<div class="game-launcher__banner-sub-title">WINZARD</div>
+							<div class="game-launcher__table game-table">
+								<div class="game-table__row">
+									<div class="game-table__col">
+										<div class="game-table__field">
+											<div class="game-table__field-name">Game Providers</div>
+											<div class="game-table__field-value">Provider Name</div>
+										</div>
+										<div class="game-table__field">
+											<div class="game-table__field-name">Minimum Bet</div>
+											<div class="game-table__field-value">$0.2</div>
+										</div>
+										<div class="game-table__field">
+											<div class="game-table__field-name">Maximum Bet</div>
+											<div class="game-table__field-value">$100</div>
+										</div>
+									</div>
+									<div class="game-table__col">
+										<div class="game-table__field">
+											<div class="game-table__field-name">Bonus Buy</div>
+											<div class="game-table__field-value">
+												<span>Yes</span>
+												<div class="game-table__field-icon">
+													<img src="@img/icons/circle-check-mark.svg" alt="icon" />
+												</div>
+											</div>
+										</div>
+										<div class="game-table__field">
+											<div class="game-table__field-name">Free Spins</div>
+											<div class="game-table__field-value">
+												<span>Yes</span>
+												<div class="game-table__field-icon">
+													<img src="@img/icons/circle-check-mark.svg" alt="icon" />
+												</div>
+											</div>
+										</div>
+										<div class="game-table__field">
+											<div class="game-table__field-name">Gamble Future</div>
+											<div class="game-table__field-value">
+												<span>No</span>
+												<div class="game-table__field-icon">
+													<img src="@img/icons/circle-cross-mark.svg" alt="icon" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="game-launcher__slider-wrapper game-launcher__slider-wrapper--games-slider">
+								<div class="game-launcher__slider-top">
+									<div class="game-launcher__slider-title">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#title-prepend"></use>
+										</svg>
+										<span>Other Games</span>
+									</div>
+									<div class="slider-navigation">
+										<div class="slider-all">
+											<div class="slider-all__text">View all</div>
+											<div class="slider-all__value">16</div>
+											<div class="slider-all__icon">
+												<img src="@img/icons/chevron-right.svg" alt="icon" />
+											</div>
+										</div>
+										<div class="slider-arrows">
+											<button class="slider-arrows__arrow-prev slider-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none">
+													<path
+														d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z"
+														fill="white"
+														stroke="white"
+														stroke-width="0.5"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="slider-arrows__arrow-next slider-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none">
+													<path
+														d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z"
+														fill="white"
+														stroke="white"
+														stroke-width="0.5"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="games-slider__games-slider games-slider swiper">
+									<div class="games-slider__slider-wrapper swiper-wrapper">
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/01.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/02.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+										</div>
+										<div class="games-slider__slide swiper-slide">
+											<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="game-launcher__slider-wrapper game-launcher__slider-wrapper--providers-slider">
+								<div class="game-launcher__slider-top">
+									<div class="game-launcher__slider-title">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#title-prepend"></use>
+										</svg>
+										<span>Providers</span>
+									</div>
+									<div class="slider-navigation">
+										<div class="slider-all">
+											<div class="slider-all__text">View all</div>
+											<div class="slider-all__value">16</div>
+											<div class="slider-all__icon">
+												<img src="@img/icons/chevron-right.svg" alt="icon" />
+											</div>
+										</div>
+										<div class="slider-arrows">
+											<button class="slider-arrows__arrow-prev slider-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none">
+													<path
+														d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z"
+														fill="white"
+														stroke="white"
+														stroke-width="0.5"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="slider-arrows__arrow-next slider-arrow">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none">
+													<path
+														d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z"
+														fill="white"
+														stroke="white"
+														stroke-width="0.5"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="games-slider__providers-slider providers-slider swiper">
+									<div class="providers-slider__slider-wrapper swiper-wrapper">
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+										<div class="providers-slider__slide swiper-slide">
+											<img src="@img/game-launcher/providers/01.png" alt="game-image" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+		@@include('html/_footer.htm',{}) @@include('html/_mobile-menu.htm',{})@@include('html/_js.htm',{})
+
+		<!-- Initialize Swiper -->
+
+		<script>
+			$(document).ready(function () {
+				$('select').each(function () {
+					var $this = $(this),
+						numberOfOptions = $(this).children('option').length;
+
+					$this.addClass('select-hidden');
+					$this.wrap('<div class="select"></div>');
+					$this.after('<div class="select-styled"></div>');
+
+					var $styledSelect = $this.next('div.select-styled');
+					$styledSelect.text($this.children('option').eq(0).text());
+
+					var $list = $('<ul />', {
+						class: 'select-options',
+					}).insertAfter($styledSelect);
+
+					for (var i = 0; i < numberOfOptions; i++) {
+						$('<li />', {
+							text: $this.children('option').eq(i).text(),
+							rel: $this.children('option').eq(i).val(),
+						}).appendTo($list);
+						if ($this.children('option').eq(i).is(':selected')) {
+							$('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected');
+						}
+					}
+
+					var $listItems = $list.children('li');
+
+					$styledSelect.click(function (e) {
+						e.stopPropagation();
+						$('div.select-styled.active')
+							.not(this)
+							.each(function () {
+								$(this).removeClass('active').next('ul.select-options').hide();
+							});
+						$(this).toggleClass('active').next('ul.select-options').toggle();
+					});
+
+					$listItems.click(function (e) {
+						e.stopPropagation();
+						$styledSelect.text($(this).text()).removeClass('active');
+						$this.val($(this).attr('rel'));
+						$list.find('li.is-selected').removeClass('is-selected');
+						$list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+						$list.hide();
+
+						var currentUrl = window.location.href;
+						var parts = currentUrl.split('/');
+						var currentLanguage = '/' + parts[3];
+						var newUrl = currentUrl.replace(currentLanguage, '/' + $(this).attr('rel'));
+						window.location.href = newUrl;
+						//console.log($this.val());
+					});
+				});
+
+				$('#toggle_menu_button').on('click', function () {
+					$('#navigation').fadeToggle();
+					$('.navigation-overlay-mobile').fadeToggle();
+				});
+				$('.navigation-overlay-mobile').on('click', function () {
+					$('#navigation').fadeToggle();
+					$('.navigation-overlay-mobile').fadeToggle();
+				});
+
+				$('.login_window-overlay').on('click', function () {
+					$('.login_window_container').fadeOut();
+				});
+				$('.login_window-header-close').on('click', function () {
+					$('.login_window_container').fadeOut();
+				});
+
+				$('#register_window-form_submit').on('click', function (e) {
+					e.preventDefault();
+				});
+				$('#login_window-form_submit').on('click', function (e) {
+					e.preventDefault();
+
+					let data = {
+						login: $('#login_window-form_login').val(),
+						password: $('#login_window-form_password').val(),
+					};
+
+					fetch('/api/auth/login', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify(data),
+					})
+						.then((response) => response.json())
+						.then((response) => {
+							console.log(response);
+
+							if (response.status === 400) {
+								$('.login_window-form-error-text').text(response.error);
+							} else if (response.status === 200) {
+								// localStorage.token = response.token;
+								// window.location = "/";
+
+								$('#headerWindowAuthLoginForm').submit();
+							} else {
+								$('.login_window-form-error-text').text('Error...');
+							}
+						});
+				});
+
+				$('#log_in_button').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'none');
+					$('#headerWindowAuthLoginForm').css('display', 'block');
+
+					$('#headerWindowAuthLoginButton').addClass('active');
+					$('#headerWindowAuthRegisterButton').removeClass('active');
+
+					$('.login_window_container').fadeIn();
+				});
+				$('#register_in_button').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'block');
+					$('#headerWindowAuthLoginForm').css('display', 'none');
+
+					$('#headerWindowAuthRegisterButton').addClass('active');
+					$('#headerWindowAuthLoginButton').removeClass('active');
+
+					$('.login_window_container').fadeIn();
+				});
+
+				$('#headerWindowAuthRegisterButton').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'block');
+					$('#headerWindowAuthLoginForm').css('display', 'none');
+					$(this).addClass('active');
+					$('#headerWindowAuthLoginButton').removeClass('active');
+				});
+				$('#headerWindowAuthLoginButton').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'none');
+					$('#headerWindowAuthLoginForm').css('display', 'block');
+					$(this).addClass('active');
+					$('#headerWindowAuthRegisterButton').removeClass('active');
+				});
+
+				$('.select-styled').removeClass('active');
+				$('.select-options').css('display', 'none');
+			});
+		</script>
+	</body>
+</html>
