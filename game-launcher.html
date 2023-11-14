@@ -22,7 +22,7 @@
 </head>
 
 
-<body class="body" id="body">
+<body class="body" id="body" swiper-assets-reset>
 	<div class="login_window_container">
 		<div class="login_window">
 			<div class="login_window-header">
@@ -238,145 +238,217 @@
 
 
 			<!-- Custom code here -->
-			<section class="contact">
-				<div class="contact__container content-container">
-					<div class="contact__body">
-						<div class="contact__block">
-							<h2 class="contact__title title-h2">Contact us</h2>
-							<div class="contact__row">
-								<div class="contact__col">
-									<form class="form-contact">
-										<div class="form-contact__input-wrapper input-wrapper">
-											<input type="text" placeholder="Your Name" />
-										</div>
-										<div class="form-contact__input-wrapper input-wrapper">
-											<input type="email" placeholder="Your E-mail" />
-										</div>
-										<div class="form-contact__input-wrapper form-contact__input-wrapper--textarea input-wrapper">
-											<textarea type="text" placeholder="Your Message"></textarea>
-											<button class="button">Submit</button>
-										</div>
-									</form>
+			<section class="game-launcher">
+				<div class="game-launcher__container content-container">
+					<div class="game-launcher__body">
+						<div class="game-launcher__top">
+							<a class="game-launcher__back" href="#">
+								<div class="game-launcher__back-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+										<path d="M17 9C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7V9ZM0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM17 7L1 7V9L17 9V7Z" fill="#576081" />
+									</svg>
 								</div>
-								<div class="contact__col">
-									<div class="info-contact">
-										<div class="info-contact__inner">
-											<h3 class="info-contact__title">Support Contact Information</h3>
-											<div class="info-contact__text-wrapper">
-												<a class="info-contact__text-wrapper-row" href="mailto:support@mail.me">
-													<span class="info-contact__text-left">E-mail: </span>
-													<span class="info-contact__text-right">support@mail.me</span>
-												</a>
-												<a class="info-contact__text-wrapper-row" href="tel:+17271231243">
-													<span class="info-contact__text-left">Phone: </span>
-													<span class="info-contact__text-right">+1 727 123 1243</span>
-												</a>
+								<div class="game-launcher__back-text">Back to games</div>
+							</a>
+							<h2 class="game-launcher__title title-h2">Tiny Gods</h2>
+							<div class="game-launcher__actions">
+								<button class="game-launcher__action game-launcher__action--icon-fill">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#star"></use>
+									</svg>
+								</button>
+								<button class="game-launcher__action game-launcher__action--icon-fill">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#info"></use>
+									</svg>
+								</button>
+								<button class="game-launcher__action">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#fullscreen"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="game-launcher__banner">
+							<div class="game-launcher__banner-background-ibg">
+								<picture><source srcset="img/game-launcher/banner-background.webp" type="image/webp"><img src="img/game-launcher/banner-background.jpg" alt="background" /></picture>
+								<picture><source srcset="img/game-launcher/banner-background--mobile.webp" type="image/webp"><img class="mobile" src="img/game-launcher/banner-background--mobile.jpg" alt="background" /></picture>
+							</div>
+						</div>
+						<div class="game-launcher__banner-sub-title">WINZARD</div>
+						<div class="game-launcher__table game-table">
+							<div class="game-table__row">
+								<div class="game-table__col">
+									<div class="game-table__field">
+										<div class="game-table__field-name">Game Providers</div>
+										<div class="game-table__field-value">Provider Name</div>
+									</div>
+									<div class="game-table__field">
+										<div class="game-table__field-name">Minimum Bet</div>
+										<div class="game-table__field-value">$0.2</div>
+									</div>
+									<div class="game-table__field">
+										<div class="game-table__field-name">Maximum Bet</div>
+										<div class="game-table__field-value">$100</div>
+									</div>
+								</div>
+								<div class="game-table__col">
+									<div class="game-table__field">
+										<div class="game-table__field-name">Bonus Buy</div>
+										<div class="game-table__field-value">
+											<span>Yes</span>
+											<div class="game-table__field-icon">
+												<img src="img/icons/circle-check-mark.svg" alt="icon" />
 											</div>
-											<button class="info-contact__button button-secondary button-secondary--icon-stroke">
-												<svg>
-													<use xlink:href="img/icons/icons.svg#chat"></use>
-												</svg>
-												<span>Live Chat Support</span>
-											</button>
 										</div>
-										<div class="info-contact__background-ibg">
-											<picture><source srcset="img/contact/vip.webp" type="image/webp"><img src="img/contact/vip.png" alt="background" /></picture>
+									</div>
+									<div class="game-table__field">
+										<div class="game-table__field-name">Free Spins</div>
+										<div class="game-table__field-value">
+											<span>Yes</span>
+											<div class="game-table__field-icon">
+												<img src="img/icons/circle-check-mark.svg" alt="icon" />
+											</div>
+										</div>
+									</div>
+									<div class="game-table__field">
+										<div class="game-table__field-name">Gamble Future</div>
+										<div class="game-table__field-value">
+											<span>No</span>
+											<div class="game-table__field-icon">
+												<img src="img/icons/circle-cross-mark.svg" alt="icon" />
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="contact__block">
-							<h2 class="contact__title title-h2">FAQ</h2>
-							<div class="contact__accordion-container accordion-container">
-								<div class="accordion-wrapper">
-									<div class="accordion">
-										<h2 class="accordion__header">
-											<button type="button" class="accordion__trigger">
-												<span class="accordion__header-text">How to become a part of the VIP Club?</span>
-												<span class="accordion__header-icon-wrapper">
-													<svg>
-														<use xlink:href="img/icons/icons.svg#chevron-down"></use>
-													</svg>
-												</span>
-											</button>
-										</h2>
-										<div class="accordion__panel">
-											<p class="accordion__panel-text">
-												The are several reasons for it.It’s either you haven’t played on
-												Winzard for a long period of time or you became a VIP Club member
-												less than a week ago and it didn’t accumulate yet. Weekly bonuses
-												are sent out each Monday and monthly on the 1st of each month.
-											</p>
+						<div class="game-launcher__slider-wrapper game-launcher__slider-wrapper--games-slider">
+							<div class="game-launcher__slider-top">
+								<div class="game-launcher__slider-title">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#title-prepend"></use>
+									</svg>
+									<span>Other Games</span>
+								</div>
+								<div class="slider-navigation">
+									<div class="slider-all">
+										<div class="slider-all__text">View all</div>
+										<div class="slider-all__value">16</div>
+										<div class="slider-all__icon">
+											<img src="img/icons/chevron-right.svg" alt="icon" />
 										</div>
 									</div>
-								</div>
-								<div class="accordion-wrapper">
-									<div class="accordion">
-										<h2 class="accordion__header">
-											<button type="button" class="accordion__trigger">
-												<span class="accordion__header-text">I am a member and I haven’t received any bonus yet. Why? When
-													are they sent to the users and how often?</span>
-												<span class="accordion__header-icon-wrapper">
-													<svg>
-														<use xlink:href="img/icons/icons.svg#chevron-down"></use>
-													</svg>
-												</span>
-											</button>
-										</h2>
-										<div class="accordion__panel">
-											<p class="accordion__panel-text">
-												The are several reasons for it.It’s either you haven’t played on
-												Winzard for a long period of time or you became a VIP Club member
-												less than a week ago and it didn’t accumulate yet. Weekly bonuses
-												are sent out each Monday and monthly on the 1st of each month.
-											</p>
-										</div>
+									<div class="slider-arrows">
+										<button class="slider-arrows__arrow-prev slider-arrow">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z" fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="slider-arrows__arrow-next slider-arrow">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z" fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div class="accordion-wrapper">
-									<div class="accordion">
-										<h2 class="accordion__header">
-											<button type="button" class="accordion__trigger">
-												<span class="accordion__header-text">I want to become a part of the VIP Club, but I haven’t reached
-													Rank 13. What should I do?</span>
-												<span class="accordion__header-icon-wrapper">
-													<svg>
-														<use xlink:href="img/icons/icons.svg#chevron-down"></use>
-													</svg>
-												</span>
-											</button>
-										</h2>
-										<div class="accordion__panel">
-											<p class="accordion__panel-text">
-												The are several reasons for it.It’s either you haven’t played on
-												Winzard for a long period of time or you became a VIP Club member
-												less than a week ago and it didn’t accumulate yet. Weekly bonuses
-												are sent out each Monday and monthly on the 1st of each month.
-											</p>
-										</div>
+							</div>
+							<div class="games-slider__games-slider games-slider swiper">
+								<div class="games-slider__slider-wrapper swiper-wrapper">
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/01.webp" type="image/webp"><img src="img/game-launcher/games/01.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/02.webp" type="image/webp"><img src="img/game-launcher/games/02.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/03.webp" type="image/webp"><img src="img/game-launcher/games/03.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/04.webp" type="image/webp"><img src="img/game-launcher/games/04.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/05.webp" type="image/webp"><img src="img/game-launcher/games/05.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/06.webp" type="image/webp"><img src="img/game-launcher/games/06.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/03.webp" type="image/webp"><img src="img/game-launcher/games/03.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/04.webp" type="image/webp"><img src="img/game-launcher/games/04.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/05.webp" type="image/webp"><img src="img/game-launcher/games/05.jpg" alt="game-image" /></picture>
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/games/06.webp" type="image/webp"><img src="img/game-launcher/games/06.jpg" alt="game-image" /></picture>
 									</div>
 								</div>
-								<div class="accordion-wrapper">
-									<div class="accordion">
-										<h2 class="accordion__header">
-											<button type="button" class="accordion__trigger">
-												<span class="accordion__header-text">What does affect the weekly/monthly bonus?</span>
-												<span class="accordion__header-icon-wrapper">
-													<svg>
-														<use xlink:href="img/icons/icons.svg#chevron-down"></use>
-													</svg>
-												</span>
-											</button>
-										</h2>
-										<div class="accordion__panel">
-											<p class="accordion__panel-text">
-												The are several reasons for it.It’s either you haven’t played on
-												Winzard for a long period of time or you became a VIP Club member
-												less than a week ago and it didn’t accumulate yet. Weekly bonuses
-												are sent out each Monday and monthly on the 1st of each month.
-											</p>
+							</div>
+						</div>
+						<div class="game-launcher__slider-wrapper game-launcher__slider-wrapper--providers-slider">
+							<div class="game-launcher__slider-top">
+								<div class="game-launcher__slider-title">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#title-prepend"></use>
+									</svg>
+									<span>Providers</span>
+								</div>
+								<div class="slider-navigation">
+									<div class="slider-all">
+										<div class="slider-all__text">View all</div>
+										<div class="slider-all__value">16</div>
+										<div class="slider-all__icon">
+											<img src="img/icons/chevron-right.svg" alt="icon" />
 										</div>
+									</div>
+									<div class="slider-arrows">
+										<button class="slider-arrows__arrow-prev slider-arrow">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z" fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="slider-arrows__arrow-next slider-arrow">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z" fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="games-slider__providers-slider providers-slider swiper">
+								<div class="providers-slider__slider-wrapper swiper-wrapper">
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
+									</div>
+									<div class="providers-slider__slide swiper-slide">
+										<picture><source srcset="img/game-launcher/providers/01.webp" type="image/webp"><img src="img/game-launcher/providers/01.png" alt="game-image" /></picture>
 									</div>
 								</div>
 							</div>
