@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"HomePage" })
+
+	<body class="body" id="body">
+		<div class="login_window_container">
+			<div class="login_window">
+				<div class="login_window-header">
+					<div class="login_window-header-leftSide">
+						<div class="login_window-header-logotype-image"></div>
+						<span class="login_window-header-logotype-text">WINZARD</span>
+					</div>
+					<div class="login_window-header-rightSide">
+						<span class="login_window-header-close">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="10"
+								height="10"
+								viewBox="0 0 10 10"
+								fill="none">
+								<path
+									d="M0.27955 0.27955C0.458599 0.100554 0.701411 0 0.954587 0C1.20776 0 1.45057 0.100554 1.62962 0.27955L5.00576 3.65569L8.3819 0.27955C8.56198 0.105627 8.80316 0.00938937 9.05351 0.0115648C9.30385 0.0137402 9.54332 0.114155 9.72035 0.291181C9.89737 0.468206 9.99779 0.70768 9.99996 0.958023C10.0021 1.20837 9.9059 1.44955 9.73198 1.62962L6.35584 5.00576L9.73198 8.3819C9.9059 8.56198 10.0021 8.80316 9.99996 9.05351C9.99779 9.30385 9.89737 9.54332 9.72035 9.72035C9.54332 9.89737 9.30385 9.99779 9.05351 9.99996C8.80316 10.0021 8.56198 9.9059 8.3819 9.73198L5.00576 6.35584L1.62962 9.73198C1.44955 9.9059 1.20837 10.0021 0.958023 9.99996C0.70768 9.99779 0.468206 9.89737 0.291181 9.72035C0.114155 9.54332 0.0137402 9.30385 0.0115648 9.05351C0.00938937 8.80316 0.105627 8.56198 0.27955 8.3819L3.65569 5.00576L0.27955 1.62962C0.100554 1.45057 0 1.20776 0 0.954587C0 0.701411 0.100554 0.458599 0.27955 0.27955Z"
+									fill="#576081" />
+							</svg>
+						</span>
+					</div>
+				</div>
+
+				<div class="login_window-switcher">
+					<div class="login_window-switcher_buttons">
+						<button class="login_window-header-switcher-button" id="headerWindowAuthRegisterButton">
+							Register
+						</button>
+						<button class="login_window-header-switcher-button active" id="headerWindowAuthLoginButton">
+							Log in
+						</button>
+					</div>
+				</div>
+
+				<form method="POST" class="login_window-form" id="headerWindowAuthLoginForm">
+					<input type="hidden" name="_token" value="obybESdNbjRkbsePKmv5aSFqKmQ65KJKPSOYCRXU" />
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Email or Username</label>
+						<input type="text" class="login_window-form-input" name="login" id="login_window-form_login" />
+					</div>
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Password</label>
+						<input
+							type="password"
+							class="login_window-form-input"
+							name="password"
+							id="login_window-form_password" />
+					</div>
+
+					<a href="" class="login_window-form-forgot_password">Forgot password?</a>
+
+					<span class="login_window-form-error-text"></span>
+
+					<button class="login_window-form_submit" id="login_window-form_submit">Log in</button>
+				</form>
+
+				<form method="POST" class="login_window-form" id="headerWindowAuthRegisterForm">
+					<input type="hidden" name="_token" value="obybESdNbjRkbsePKmv5aSFqKmQ65KJKPSOYCRXU" />
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Email address</label>
+						<input type="email" class="login_window-form-input" name="email" id="login_window-form_login" />
+					</div>
+
+					<div class="headerWindowRegisterRowInputs">
+						<div class="accountSettings-form-group">
+							<label for="">Phone Number</label>
+							<div class="input-account-settings double">
+								<span class="edit left"> <img src="/resources/images/country.png" alt="" /> +1 </span>
+								<input type="text" class="input-account-settings" placeholder="" />
+							</div>
+						</div>
+						<div class="accountSettings-form-group">
+							<label for="">Country Code</label>
+							<div class="input-account-settings double">
+								<span class="edit left"> <img src="/resources/images/country.png" alt="" /> +1 </span>
+								<input type="text" class="input-account-settings" placeholder="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Username</label>
+						<input
+							type="text"
+							class="login_window-form-input"
+							name="username"
+							id="login_window-form_login" />
+					</div>
+					<div class="login_window-form-group">
+						<label for="" class="login_window-form-label">Password</label>
+						<input
+							type="password"
+							class="login_window-form-input"
+							name="password"
+							id="login_window-form_password" />
+					</div>
+
+					<span class="login_window-form-error-text"></span>
+
+					<button class="login_window-form_submit" id="register_window-form_submit">Register</button>
+				</form>
+			</div>
+			<div class="login_window-overlay"></div>
+		</div>
+
+		<div class="support">
+			<div class="support__icon" data-tippy-content>
+				<img src="@img/icons/support.svg" alt="support-icon" />
+			</div>
+		</div>
+
+		<section class="body-content">
+			<div class="navigation-overlay-mobile"></div>
+			@@include('html/_navigation.htm',{})
+			<section class="content">
+				@@include('html/_header.htm',{})
+
+				<!-- Custom code here -->
+				<div class="top-slider">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide"
+								style="
+									background: url('/resources/images/slider-background.png');
+									background-size: cover;
+									background-position: center center;
+								">
+								<span class="swiper-slide-offer"> register and get UP TO 100% for first deposit </span>
+								<span class="swiper-slide-underOffer"> Get bonus for every deposit! </span>
+
+								<button class="swiper-slide-button-get-bonus">Get Bonus</button>
+							</div>
+							<div
+								class="swiper-slide"
+								style="
+									background: url('/resources/images/slider-background.png');
+									background-size: cover;
+									background-position: center center;
+								">
+								<span class="swiper-slide-offer"> register and get UP TO 100% for first deposit </span>
+								<span class="swiper-slide-underOffer"> Get bonus for every deposit! </span>
+
+								<button class="swiper-slide-button-get-bonus">Get Bonus</button>
+							</div>
+							<div
+								class="swiper-slide"
+								style="
+									background: url('/resources/images/slider-background.png');
+									background-size: cover;
+									background-position: center center;
+								">
+								<span class="swiper-slide-offer"> register and get UP TO 100% for first deposit </span>
+								<span class="swiper-slide-underOffer"> Get bonus for every deposit! </span>
+
+								<button class="swiper-slide-button-get-bonus">Get Bonus</button>
+							</div>
+							<div
+								class="swiper-slide"
+								style="
+									background: url('/resources/images/slider-background.png');
+									background-size: cover;
+									background-position: center center;
+								">
+								<span class="swiper-slide-offer"> register and get UP TO 100% for first deposit </span>
+								<span class="swiper-slide-underOffer"> Get bonus for every deposit! </span>
+
+								<button class="swiper-slide-button-get-bonus">Get Bonus</button>
+							</div>
+							<div
+								class="swiper-slide"
+								style="
+									background: url('/resources/images/slider-background.png');
+									background-size: cover;
+									background-position: center center;
+								">
+								<span class="swiper-slide-offer"> register and get UP TO 100% for first deposit </span>
+								<span class="swiper-slide-underOffer"> Get bonus for every deposit! </span>
+
+								<button class="swiper-slide-button-get-bonus">Get Bonus</button>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="banners swiper bannersSwiper">
+					<div class="swiper-wrapper">
+						<a
+							href="#"
+							class="banners-item swiper-slide"
+							style="
+								background: url('/resources/images/banners/1.png');
+								background-size: cover;
+								background-position: center center;
+							"></a>
+						<a
+							href="#"
+							class="banners-item swiper-slide"
+							style="
+								background: url('/resources/images/banners/2.png');
+								background-size: cover;
+								background-position: center center;
+							"></a>
+						<a
+							href="#"
+							class="banners-item swiper-slide"
+							style="
+								background: url('/resources/images/banners/3.png');
+								background-size: cover;
+								background-position: center center;
+							"></a>
+					</div>
+					{{--
+					<div class="swiper-pagination"></div>
+					--}}
+				</div>
+
+				<div class="games_list" data-swiper-reset>
+					<nav class="games_list_categories_list">
+						<a href="#" class="games_list_categories_list_item active">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none">
+								<path
+									d="M12.5006 6.07484V2.49984C12.5006 2.0415 12.1256 1.6665 11.6672 1.6665H8.3339C7.87557 1.6665 7.50057 2.0415 7.50057 2.49984V6.07484C7.50057 6.18317 7.54224 6.2915 7.62557 6.3665L9.7089 8.44984C9.87557 8.6165 10.1339 8.6165 10.3006 8.44984L12.3839 6.3665C12.4589 6.2915 12.5006 6.1915 12.5006 6.07484V6.07484ZM6.07557 7.49984H2.50057C2.04224 7.49984 1.66724 7.87484 1.66724 8.33317V11.6665C1.66724 12.1248 2.04224 12.4998 2.50057 12.4998H6.07557C6.1839 12.4998 6.29224 12.4582 6.36724 12.3748L8.45057 10.2915C8.61724 10.1248 8.61724 9.8665 8.45057 9.69984L6.36724 7.6165C6.32892 7.5785 6.28336 7.54858 6.23325 7.52854C6.18315 7.5085 6.12952 7.49874 6.07557 7.49984V7.49984ZM7.50057 13.9248V17.4998C7.50057 17.9582 7.87557 18.3332 8.3339 18.3332H11.6672C12.1256 18.3332 12.5006 17.9582 12.5006 17.4998V13.9248C12.5012 13.8702 12.4905 13.816 12.4689 13.7658C12.4474 13.7155 12.4156 13.6704 12.3756 13.6332L10.2922 11.5498C10.1256 11.3832 9.86724 11.3832 9.70057 11.5498L7.61724 13.6332C7.54224 13.7082 7.50057 13.8082 7.50057 13.9248ZM13.6256 7.62484L11.5422 9.70817C11.3756 9.87484 11.3756 10.1332 11.5422 10.2998L13.6256 12.3832C13.7006 12.4582 13.8089 12.5082 13.9172 12.5082H17.5006C17.9589 12.5082 18.3339 12.1332 18.3339 11.6748V8.3415C18.3339 7.88317 17.9589 7.50817 17.5006 7.50817H13.9256C13.87 7.50395 13.8142 7.51224 13.7623 7.53243C13.7104 7.55262 13.6637 7.5842 13.6256 7.62484V7.62484Z"
+									fill="white" />
+							</svg>
+							<span class="games_list_categories_list_item-text"> All Games </span>
+							<span class="games_list_categories_list_item-counter">{{ $count }}</span>
+						</a>
+						@foreach($categories_list as $category)
+						<a href="#" class="games_list_categories_list_item">{{ $category }}</a>
+						@endforeach
+					</nav>
+
+					<nav class="games_list_types_list">
+						<a href="" class="games_list_types_list_item active">All</a>
+						@foreach($categories_list as $category)
+						<a href="" class="games_list_types_list_item">{{ $category }}</a>
+						@endforeach
+					</nav>
+
+					<div class="games-wrapper">
+						<div class="game-launcher__slider-wrapper" data-game-slider-root>
+							<div class="game-launcher__slider-top">
+								<div class="game-launcher__slider-title">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#title-prepend"></use>
+									</svg>
+									<span>Other Games</span>
+								</div>
+								<div class="slider-navigation">
+									<div class="slider-all">
+										<div class="slider-all__text">View all</div>
+										<div class="slider-all__value">16</div>
+										<div class="slider-all__icon">
+											<img src="@img/icons/chevron-right.svg" alt="icon" />
+										</div>
+									</div>
+									<div class="slider-arrows">
+										<button class="slider-arrows__arrow-prev slider-arrow">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none">
+												<path
+													d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z"
+													fill="white"
+													stroke="white"
+													stroke-width="0.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="slider-arrows__arrow-next slider-arrow">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none">
+												<path
+													d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z"
+													fill="white"
+													stroke="white"
+													stroke-width="0.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="games-slider__games-slider swiper" data-game-slider>
+								<div class="games-slider__slider-wrapper swiper-wrapper">
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/01.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/02.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="game-launcher__slider-wrapper" data-game-slider-root>
+							<div class="game-launcher__slider-top">
+								<div class="game-launcher__slider-title">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#title-prepend"></use>
+									</svg>
+									<span>Other Games</span>
+								</div>
+								<div class="slider-navigation">
+									<div class="slider-all">
+										<div class="slider-all__text">View all</div>
+										<div class="slider-all__value">16</div>
+										<div class="slider-all__icon">
+											<img src="@img/icons/chevron-right.svg" alt="icon" />
+										</div>
+									</div>
+									<div class="slider-arrows">
+										<button class="slider-arrows__arrow-prev slider-arrow">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none">
+												<path
+													d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z"
+													fill="white"
+													stroke="white"
+													stroke-width="0.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="slider-arrows__arrow-next slider-arrow">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none">
+												<path
+													d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z"
+													fill="white"
+													stroke="white"
+													stroke-width="0.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="games-slider__games-slider swiper" data-game-slider>
+								<div class="games-slider__slider-wrapper swiper-wrapper">
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/01.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/02.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="game-launcher__slider-wrapper" data-game-slider-root>
+							<div class="game-launcher__slider-top">
+								<div class="game-launcher__slider-title">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#title-prepend"></use>
+									</svg>
+									<span>Other Games</span>
+								</div>
+								<div class="slider-navigation">
+									<div class="slider-all">
+										<div class="slider-all__text">View all</div>
+										<div class="slider-all__value">16</div>
+										<div class="slider-all__icon">
+											<img src="@img/icons/chevron-right.svg" alt="icon" />
+										</div>
+									</div>
+									<div class="slider-arrows">
+										<button class="slider-arrows__arrow-prev slider-arrow">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none">
+												<path
+													d="M14.1161 5.11612C14.6043 4.62796 15.3957 4.62796 15.8839 5.11612C16.372 5.60427 16.372 6.39573 15.8839 6.88388L10.7678 12L15.8839 17.1161C16.372 17.6043 16.372 18.3957 15.8839 18.8839C15.3957 19.372 14.6043 19.372 14.1161 18.8839L8.11612 12.8839C7.62796 12.3957 7.62796 11.6043 8.11612 11.1161L14.1161 5.11612Z"
+													fill="white"
+													stroke="white"
+													stroke-width="0.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button class="slider-arrows__arrow-next slider-arrow">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none">
+												<path
+													d="M9.88388 5.11612C9.39573 4.62796 8.60427 4.62796 8.11612 5.11612C7.62796 5.60427 7.62796 6.39573 8.11612 6.88388L13.2322 12L8.11612 17.1161C7.62796 17.6043 7.62796 18.3957 8.11612 18.8839C8.60427 19.372 9.39573 19.372 9.88388 18.8839L15.8839 12.8839C16.372 12.3957 16.372 11.6043 15.8839 11.1161L9.88388 5.11612Z"
+													fill="white"
+													stroke="white"
+													stroke-width="0.5"
+													stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="games-slider__games-slider swiper" data-game-slider>
+								<div class="games-slider__slider-wrapper swiper-wrapper">
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/01.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/02.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/03.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/04.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/05.jpg" alt="game-image" />
+									</div>
+									<div class="games-slider__slide swiper-slide">
+										<img src="@img/game-launcher/games/06.jpg" alt="game-image" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="landing_section_name_row">
+					<h2 class="live_matches_name">Live Matches</h2>
+
+					<a href="#" class="live_matches_more">
+						More
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+							<path
+								d="M15.1211 5.5L1.5824 5.5"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M10.6082 1L15.1211 5.5L10.6082 10"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="swiper footbal_cards">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide footbal_cards-item">
+							<div class="footbal_cards-item_header">
+								<span class="footbal_cards-item_header-live"> LIVE </span>
+								<span class="footbal_cards-item_header-views">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="14"
+										viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M7.00025 0C5.61578 0 4.2624 0.410543 3.11126 1.17971C1.96011 1.94888 1.0629 3.04213 0.53309 4.32121C0.00327713 5.6003 -0.135346 7.00776 0.13475 8.36563C0.404847 9.7235 1.07153 10.9708 2.0505 11.9497C3.02947 12.9287 4.27675 13.5954 5.63461 13.8655C6.99248 14.1356 8.39995 13.997 9.67903 13.4672C10.9581 12.9373 12.0514 12.0401 12.8205 10.889C13.5897 9.73784 14.0002 8.38447 14.0002 7C14.0002 6.08075 13.8192 5.17049 13.4674 4.32121C13.1156 3.47194 12.6 2.70026 11.95 2.05025C11.3 1.40024 10.5283 0.884626 9.67903 0.532843C8.82975 0.18106 7.9195 0 7.00025 0ZM6.72025 9.31C6.25878 9.6561 5.60025 9.32683 5.60025 8.75V5.25C5.60025 4.67317 6.25878 4.3439 6.72025 4.69L9.05358 6.44C9.42691 6.72 9.42691 7.28 9.05358 7.56L6.72025 9.31Z"
+											fill="#576081" />
+									</svg>
+									+15
+								</span>
+							</div>
+
+							<div class="footbal_cards-item_teams">
+								<img src="/resources/images/manchester.png" alt="" />
+								VS
+								<img src="/resources/images/bvb.png" alt="" />
+							</div>
+
+							<div class="footbal_cards-item_time">
+								<span class="footbal_cards-item_time-text">2d Half 72`</span>
+								<div class="footbal_cards-item_time-row">
+									<div class="footbal_cards-item_time-row-complete"></div>
+									<div class="footbal_cards-item_time-row-notcomplete"></div>
+								</div>
+								<span class="footbal_cards-item_time-name">Football / UEFA</span>
+							</div>
+
+							<div class="footbal_cards-item_teamstext">
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">Manchester United</span>
+									<span class="footbal_cards-item_teamstext-row-column">1</span>
+								</div>
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">BVB</span>
+									<span class="footbal_cards-item_teamstext-row-column">0</span>
+								</div>
+							</div>
+
+							<div class="footbal_cards-item_teamsmoney">
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">1</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">1.64</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">x</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">2.32</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">2</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">4.21</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide footbal_cards-item">
+							<div class="footbal_cards-item_header">
+								<span class="footbal_cards-item_header-live"> LIVE </span>
+								<span class="footbal_cards-item_header-views">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="14"
+										viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M7.00025 0C5.61578 0 4.2624 0.410543 3.11126 1.17971C1.96011 1.94888 1.0629 3.04213 0.53309 4.32121C0.00327713 5.6003 -0.135346 7.00776 0.13475 8.36563C0.404847 9.7235 1.07153 10.9708 2.0505 11.9497C3.02947 12.9287 4.27675 13.5954 5.63461 13.8655C6.99248 14.1356 8.39995 13.997 9.67903 13.4672C10.9581 12.9373 12.0514 12.0401 12.8205 10.889C13.5897 9.73784 14.0002 8.38447 14.0002 7C14.0002 6.08075 13.8192 5.17049 13.4674 4.32121C13.1156 3.47194 12.6 2.70026 11.95 2.05025C11.3 1.40024 10.5283 0.884626 9.67903 0.532843C8.82975 0.18106 7.9195 0 7.00025 0ZM6.72025 9.31C6.25878 9.6561 5.60025 9.32683 5.60025 8.75V5.25C5.60025 4.67317 6.25878 4.3439 6.72025 4.69L9.05358 6.44C9.42691 6.72 9.42691 7.28 9.05358 7.56L6.72025 9.31Z"
+											fill="#576081" />
+									</svg>
+									+15
+								</span>
+							</div>
+
+							<div class="footbal_cards-item_teams">
+								<img src="/resources/images/manchester.png" alt="" />
+								VS
+								<img src="/resources/images/bvb.png" alt="" />
+							</div>
+
+							<div class="footbal_cards-item_time">
+								<span class="footbal_cards-item_time-text">2d Half 72`</span>
+								<div class="footbal_cards-item_time-row">
+									<div class="footbal_cards-item_time-row-complete"></div>
+									<div class="footbal_cards-item_time-row-notcomplete"></div>
+								</div>
+								<span class="footbal_cards-item_time-name">Football / UEFA</span>
+							</div>
+
+							<div class="footbal_cards-item_teamstext">
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">Manchester United</span>
+									<span class="footbal_cards-item_teamstext-row-column">1</span>
+								</div>
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">BVB</span>
+									<span class="footbal_cards-item_teamstext-row-column">0</span>
+								</div>
+							</div>
+
+							<div class="footbal_cards-item_teamsmoney">
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">1</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">1.64</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">x</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">2.32</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">2</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">4.21</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide footbal_cards-item">
+							<div class="footbal_cards-item_header">
+								<span class="footbal_cards-item_header-live"> LIVE </span>
+								<span class="footbal_cards-item_header-views">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="14"
+										viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M7.00025 0C5.61578 0 4.2624 0.410543 3.11126 1.17971C1.96011 1.94888 1.0629 3.04213 0.53309 4.32121C0.00327713 5.6003 -0.135346 7.00776 0.13475 8.36563C0.404847 9.7235 1.07153 10.9708 2.0505 11.9497C3.02947 12.9287 4.27675 13.5954 5.63461 13.8655C6.99248 14.1356 8.39995 13.997 9.67903 13.4672C10.9581 12.9373 12.0514 12.0401 12.8205 10.889C13.5897 9.73784 14.0002 8.38447 14.0002 7C14.0002 6.08075 13.8192 5.17049 13.4674 4.32121C13.1156 3.47194 12.6 2.70026 11.95 2.05025C11.3 1.40024 10.5283 0.884626 9.67903 0.532843C8.82975 0.18106 7.9195 0 7.00025 0ZM6.72025 9.31C6.25878 9.6561 5.60025 9.32683 5.60025 8.75V5.25C5.60025 4.67317 6.25878 4.3439 6.72025 4.69L9.05358 6.44C9.42691 6.72 9.42691 7.28 9.05358 7.56L6.72025 9.31Z"
+											fill="#576081" />
+									</svg>
+									+15
+								</span>
+							</div>
+
+							<div class="footbal_cards-item_teams">
+								<img src="/resources/images/manchester.png" alt="" />
+								VS
+								<img src="/resources/images/bvb.png" alt="" />
+							</div>
+
+							<div class="footbal_cards-item_time">
+								<span class="footbal_cards-item_time-text">2d Half 72`</span>
+								<div class="footbal_cards-item_time-row">
+									<div class="footbal_cards-item_time-row-complete"></div>
+									<div class="footbal_cards-item_time-row-notcomplete"></div>
+								</div>
+								<span class="footbal_cards-item_time-name">Football / UEFA</span>
+							</div>
+
+							<div class="footbal_cards-item_teamstext">
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">Manchester United</span>
+									<span class="footbal_cards-item_teamstext-row-column">1</span>
+								</div>
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">BVB</span>
+									<span class="footbal_cards-item_teamstext-row-column">0</span>
+								</div>
+							</div>
+
+							<div class="footbal_cards-item_teamsmoney">
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">1</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">1.64</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">x</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">2.32</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">2</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">4.21</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide footbal_cards-item">
+							<div class="footbal_cards-item_header">
+								<span class="footbal_cards-item_header-live"> LIVE </span>
+								<span class="footbal_cards-item_header-views">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="14"
+										viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M7.00025 0C5.61578 0 4.2624 0.410543 3.11126 1.17971C1.96011 1.94888 1.0629 3.04213 0.53309 4.32121C0.00327713 5.6003 -0.135346 7.00776 0.13475 8.36563C0.404847 9.7235 1.07153 10.9708 2.0505 11.9497C3.02947 12.9287 4.27675 13.5954 5.63461 13.8655C6.99248 14.1356 8.39995 13.997 9.67903 13.4672C10.9581 12.9373 12.0514 12.0401 12.8205 10.889C13.5897 9.73784 14.0002 8.38447 14.0002 7C14.0002 6.08075 13.8192 5.17049 13.4674 4.32121C13.1156 3.47194 12.6 2.70026 11.95 2.05025C11.3 1.40024 10.5283 0.884626 9.67903 0.532843C8.82975 0.18106 7.9195 0 7.00025 0ZM6.72025 9.31C6.25878 9.6561 5.60025 9.32683 5.60025 8.75V5.25C5.60025 4.67317 6.25878 4.3439 6.72025 4.69L9.05358 6.44C9.42691 6.72 9.42691 7.28 9.05358 7.56L6.72025 9.31Z"
+											fill="#576081" />
+									</svg>
+									+15
+								</span>
+							</div>
+
+							<div class="footbal_cards-item_teams">
+								<img src="/resources/images/manchester.png" alt="" />
+								VS
+								<img src="/resources/images/bvb.png" alt="" />
+							</div>
+
+							<div class="footbal_cards-item_time">
+								<span class="footbal_cards-item_time-text">2d Half 72`</span>
+								<div class="footbal_cards-item_time-row">
+									<div class="footbal_cards-item_time-row-complete"></div>
+									<div class="footbal_cards-item_time-row-notcomplete"></div>
+								</div>
+								<span class="footbal_cards-item_time-name">Football / UEFA</span>
+							</div>
+
+							<div class="footbal_cards-item_teamstext">
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">Manchester United</span>
+									<span class="footbal_cards-item_teamstext-row-column">1</span>
+								</div>
+								<div class="footbal_cards-item_teamstext-row">
+									<span class="footbal_cards-item_teamstext-row-column">BVB</span>
+									<span class="footbal_cards-item_teamstext-row-column">0</span>
+								</div>
+							</div>
+
+							<div class="footbal_cards-item_teamsmoney">
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">1</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">1.64</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">x</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">2.32</span>
+								</div>
+								<div class="footbal_cards-item_teamsmoney-item">
+									<span class="footbal_cards-item_teamsmoney-item-first">2</span>
+									<span class="footbal_cards-item_teamsmoney-item-second">4.21</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="casino_table_name">CASINO <span class="sportbook">sportbook</span></h2>
+				<div class="casino_table">
+					<div class="casino_table_header">
+						<div class="column">Game</div>
+						<div class="column">Username</div>
+						<div class="column">Time</div>
+						<div class="column">Bet amount</div>
+						<div class="column">Multiplier</div>
+						<div class="column">Profit amount</div>
+					</div>
+					<div class="casino_table_body">
+						<div class="row">
+							<div class="column">
+								<div class="table_name_game_circle">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M14.7001 2.19971H16.2001C17.3001 2.19971 18.2001 3.09971 18.2001 4.19971V10.5997L14.7001 2.19971ZM20.1001 3.79971L21.4001 4.39971C22.4001 4.79971 22.9001 5.99971 22.5001 6.99971L20.1001 12.8997V3.79971ZM18.0001 15.4997L13.0001 3.49971C12.7001 2.69971 12.0001 2.29971 11.2001 2.29971C10.9001 2.29971 10.7001 2.39971 10.4001 2.49971L3.00011 5.49971C2.00011 5.89971 1.50011 6.99971 2.00011 7.99971L7.00011 19.9997C7.30011 20.7997 8.00011 21.1997 8.80011 21.1997C9.10011 21.1997 9.30011 21.1997 9.60011 20.9997L17.0001 17.9997C17.8001 17.6997 18.2001 16.9997 18.2001 16.1997C18.1001 15.9997 18.1001 15.6997 18.0001 15.4997ZM11.4001 14.9997L8.20011 12.5997L8.60011 8.59971L11.8001 10.9997L11.4001 14.9997Z"
+											fill="#565F7F" />
+									</svg>
+								</div>
+								Blackjack
+							</div>
+							<div class="column">
+								<img src="/resources/images/avatar.png" alt="" />
+								Zedorules
+							</div>
+							<div class="column">3:45 PM</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+							<div class="column">2.41x</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<div class="table_name_game_circle">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M14.7001 2.19971H16.2001C17.3001 2.19971 18.2001 3.09971 18.2001 4.19971V10.5997L14.7001 2.19971ZM20.1001 3.79971L21.4001 4.39971C22.4001 4.79971 22.9001 5.99971 22.5001 6.99971L20.1001 12.8997V3.79971ZM18.0001 15.4997L13.0001 3.49971C12.7001 2.69971 12.0001 2.29971 11.2001 2.29971C10.9001 2.29971 10.7001 2.39971 10.4001 2.49971L3.00011 5.49971C2.00011 5.89971 1.50011 6.99971 2.00011 7.99971L7.00011 19.9997C7.30011 20.7997 8.00011 21.1997 8.80011 21.1997C9.10011 21.1997 9.30011 21.1997 9.60011 20.9997L17.0001 17.9997C17.8001 17.6997 18.2001 16.9997 18.2001 16.1997C18.1001 15.9997 18.1001 15.6997 18.0001 15.4997ZM11.4001 14.9997L8.20011 12.5997L8.60011 8.59971L11.8001 10.9997L11.4001 14.9997Z"
+											fill="#565F7F" />
+									</svg>
+								</div>
+								Blackjack
+							</div>
+							<div class="column">
+								<img src="/resources/images/avatar.png" alt="" />
+								Zedorules
+							</div>
+							<div class="column">3:45 PM</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+							<div class="column">2.41x</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<div class="table_name_game_circle">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M14.7001 2.19971H16.2001C17.3001 2.19971 18.2001 3.09971 18.2001 4.19971V10.5997L14.7001 2.19971ZM20.1001 3.79971L21.4001 4.39971C22.4001 4.79971 22.9001 5.99971 22.5001 6.99971L20.1001 12.8997V3.79971ZM18.0001 15.4997L13.0001 3.49971C12.7001 2.69971 12.0001 2.29971 11.2001 2.29971C10.9001 2.29971 10.7001 2.39971 10.4001 2.49971L3.00011 5.49971C2.00011 5.89971 1.50011 6.99971 2.00011 7.99971L7.00011 19.9997C7.30011 20.7997 8.00011 21.1997 8.80011 21.1997C9.10011 21.1997 9.30011 21.1997 9.60011 20.9997L17.0001 17.9997C17.8001 17.6997 18.2001 16.9997 18.2001 16.1997C18.1001 15.9997 18.1001 15.6997 18.0001 15.4997ZM11.4001 14.9997L8.20011 12.5997L8.60011 8.59971L11.8001 10.9997L11.4001 14.9997Z"
+											fill="#565F7F" />
+									</svg>
+								</div>
+								Blackjack
+							</div>
+							<div class="column">
+								<img src="/resources/images/avatar.png" alt="" />
+								Zedorules
+							</div>
+							<div class="column">3:45 PM</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+							<div class="column">2.41x</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<div class="table_name_game_circle">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M14.7001 2.19971H16.2001C17.3001 2.19971 18.2001 3.09971 18.2001 4.19971V10.5997L14.7001 2.19971ZM20.1001 3.79971L21.4001 4.39971C22.4001 4.79971 22.9001 5.99971 22.5001 6.99971L20.1001 12.8997V3.79971ZM18.0001 15.4997L13.0001 3.49971C12.7001 2.69971 12.0001 2.29971 11.2001 2.29971C10.9001 2.29971 10.7001 2.39971 10.4001 2.49971L3.00011 5.49971C2.00011 5.89971 1.50011 6.99971 2.00011 7.99971L7.00011 19.9997C7.30011 20.7997 8.00011 21.1997 8.80011 21.1997C9.10011 21.1997 9.30011 21.1997 9.60011 20.9997L17.0001 17.9997C17.8001 17.6997 18.2001 16.9997 18.2001 16.1997C18.1001 15.9997 18.1001 15.6997 18.0001 15.4997ZM11.4001 14.9997L8.20011 12.5997L8.60011 8.59971L11.8001 10.9997L11.4001 14.9997Z"
+											fill="#565F7F" />
+									</svg>
+								</div>
+								Blackjack
+							</div>
+							<div class="column">
+								<img src="/resources/images/avatar.png" alt="" />
+								Zedorules
+							</div>
+							<div class="column">3:45 PM</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+							<div class="column">2.41x</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<div class="table_name_game_circle">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M14.7001 2.19971H16.2001C17.3001 2.19971 18.2001 3.09971 18.2001 4.19971V10.5997L14.7001 2.19971ZM20.1001 3.79971L21.4001 4.39971C22.4001 4.79971 22.9001 5.99971 22.5001 6.99971L20.1001 12.8997V3.79971ZM18.0001 15.4997L13.0001 3.49971C12.7001 2.69971 12.0001 2.29971 11.2001 2.29971C10.9001 2.29971 10.7001 2.39971 10.4001 2.49971L3.00011 5.49971C2.00011 5.89971 1.50011 6.99971 2.00011 7.99971L7.00011 19.9997C7.30011 20.7997 8.00011 21.1997 8.80011 21.1997C9.10011 21.1997 9.30011 21.1997 9.60011 20.9997L17.0001 17.9997C17.8001 17.6997 18.2001 16.9997 18.2001 16.1997C18.1001 15.9997 18.1001 15.6997 18.0001 15.4997ZM11.4001 14.9997L8.20011 12.5997L8.60011 8.59971L11.8001 10.9997L11.4001 14.9997Z"
+											fill="#565F7F" />
+									</svg>
+								</div>
+								Blackjack
+							</div>
+							<div class="column">
+								<img src="/resources/images/avatar.png" alt="" />
+								Zedorules
+							</div>
+							<div class="column">3:45 PM</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+							<div class="column">2.41x</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<div class="table_name_game_circle">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M14.7001 2.19971H16.2001C17.3001 2.19971 18.2001 3.09971 18.2001 4.19971V10.5997L14.7001 2.19971ZM20.1001 3.79971L21.4001 4.39971C22.4001 4.79971 22.9001 5.99971 22.5001 6.99971L20.1001 12.8997V3.79971ZM18.0001 15.4997L13.0001 3.49971C12.7001 2.69971 12.0001 2.29971 11.2001 2.29971C10.9001 2.29971 10.7001 2.39971 10.4001 2.49971L3.00011 5.49971C2.00011 5.89971 1.50011 6.99971 2.00011 7.99971L7.00011 19.9997C7.30011 20.7997 8.00011 21.1997 8.80011 21.1997C9.10011 21.1997 9.30011 21.1997 9.60011 20.9997L17.0001 17.9997C17.8001 17.6997 18.2001 16.9997 18.2001 16.1997C18.1001 15.9997 18.1001 15.6997 18.0001 15.4997ZM11.4001 14.9997L8.20011 12.5997L8.60011 8.59971L11.8001 10.9997L11.4001 14.9997Z"
+											fill="#565F7F" />
+									</svg>
+								</div>
+								Blackjack
+							</div>
+							<div class="column">
+								<img src="/resources/images/avatar.png" alt="" />
+								Zedorules
+							</div>
+							<div class="column">3:45 PM</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+							<div class="column">2.41x</div>
+							<div class="column">
+								<img src="/resources/images/tether.svg" alt="" />
+								12.43
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dont_have_crypto">
+					<div class="dont_have_crypto_content">
+						<h3 class="dont_have_crypto-text">Don't have Crypto?<br />No problem.</h3>
+						<h3 class="dont_have_crypto-text mobile-text">Don't have Crypto? No problem.</h3>
+						<div class="dont_have_crypto_row">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="103"
+								height="33"
+								viewBox="0 0 103 33"
+								fill="none">
+								<g clip-path="url(#clip0_1_251)">
+									<path
+										d="M53.3877 10.5073C53.3295 15.0859 57.4768 17.6408 60.601 19.16C63.8108 20.7186 64.889 21.7181 64.8762 23.1121C64.8523 25.2451 62.3159 26.1866 59.9424 26.2232C55.8014 26.2872 53.3936 25.1076 51.4796 24.2154L49.9878 31.1808C51.9083 32.0638 55.4643 32.8339 59.1519 32.8677C67.8079 32.8677 73.4709 28.604 73.5016 21.9932C73.5355 13.6033 61.872 13.1389 61.9517 9.38883C61.9792 8.25172 63.0665 7.03828 65.4492 6.72975C66.6285 6.57389 69.8842 6.45462 73.5753 8.15074L75.024 1.41158C73.039 0.690352 70.4878 -0.000263516 67.3115 -0.000263516C59.1642 -0.000263516 53.4339 4.32154 53.3877 10.5073V10.5073ZM88.9446 0.580218C87.364 0.580218 86.0321 1.50024 85.4376 2.91208L73.0729 32.3727H81.7226L83.4438 27.6259H94.0136L95.012 32.3727H102.636L95.983 0.580218H88.9446V0.580218ZM90.1547 9.16857L92.6509 21.107H85.8145L90.1547 9.16857V9.16857ZM42.9004 0.580615L36.0823 32.3723H44.3248L51.1397 0.579821H42.9004V0.580615ZM30.707 0.579821L22.1279 22.2195L18.6575 3.82018C18.2503 1.76623 16.6422 0.580218 14.8564 0.580218H0.832172L0.635742 1.50342C3.51485 2.12684 6.78602 3.13235 8.76785 4.20823C9.9807 4.86545 10.3265 5.43997 10.725 7.0017L17.298 32.3727H26.0082L39.3623 0.580218H30.707"
+										fill="url(#paint0_linear_1_251)" />
+								</g>
+								<defs>
+									<linearGradient
+										id="paint0_linear_1_251"
+										x1="47.5292"
+										y1="33.5271"
+										x2="48.4786"
+										y2="-0.228962"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#2C2FAC" />
+										<stop offset="1" stop-color="#254AA5" />
+									</linearGradient>
+									<clipPath id="clip0_1_251">
+										<rect
+											width="102"
+											height="33"
+											fill="white"
+											transform="translate(0.635742 -0.000244141)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="51"
+								height="31"
+								viewBox="0 0 51 31"
+								fill="none">
+								<g clip-path="url(#clip0_1_244)">
+									<path d="M18.7676 3.26056H32.2067V27.2301H18.7676V3.26056Z" fill="#FF5F00" />
+									<path
+										d="M19.6214 15.2455C19.6214 10.3754 21.9252 6.05572 25.4662 3.26061C22.8639 1.2279 19.5788 -0.000183105 15.9951 -0.000183105C7.50458 -0.000183105 0.635742 6.81792 0.635742 15.2455C0.635742 23.6729 7.50458 30.4912 15.9949 30.4912C19.5786 30.4912 22.8637 29.2631 25.4662 27.2302C21.9252 24.4775 19.6214 20.1156 19.6214 15.2455V15.2455Z"
+										fill="#EB001B" />
+									<path
+										d="M50.3395 15.2455C50.3395 23.6729 43.4707 30.4912 34.9804 30.4912C31.3966 30.4912 28.1115 29.2631 25.509 27.2302C29.0928 24.4352 31.354 20.1156 31.354 15.2455C31.354 10.3754 29.0501 6.05572 25.509 3.26061C28.1114 1.2279 31.3966 -0.000183105 34.9804 -0.000183105C43.4707 -0.000183105 50.3397 6.86036 50.3397 15.2455H50.3395Z"
+										fill="#F79E1B" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_244">
+										<rect
+											width="49.7531"
+											height="30.4938"
+											fill="white"
+											transform="translate(0.635742 -0.000183105)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="102"
+								height="67"
+								viewBox="0 0 102 67"
+								fill="none">
+								<path
+									d="M29.5051 18.77C28.2426 18.8379 26.694 19.6147 25.8018 20.7057C24.998 21.6395 24.2868 23.1677 24.472 24.6025C25.8944 24.7298 27.3126 23.8851 28.209 22.8281C29.0717 21.7329 29.6608 20.2685 29.5051 18.7743V18.77ZM38.7929 20.5529V43.8699H42.3784V35.9023H47.3442C51.8808 35.9023 55.0665 32.7653 55.0665 28.2106C55.0665 23.6686 51.944 20.5486 47.4579 20.5486L38.7929 20.5529ZM42.3784 23.6049H46.511C49.621 23.6049 51.3969 25.2859 51.3969 28.2276C51.3969 31.165 49.621 32.863 46.4984 32.863H42.3784V23.6049ZM29.1053 24.8784C27.2116 24.9208 25.6124 26.0669 24.6866 26.0669C23.6976 26.0669 22.191 24.9463 20.5582 24.976C19.4961 25.0027 18.4594 25.3095 17.5512 25.8658C16.6431 26.4221 15.8952 27.2086 15.382 28.1469C13.1642 32.0013 14.797 37.7191 16.9559 40.8603C18.0037 42.4139 19.2662 44.1246 20.9285 44.0609C22.4982 44.0015 23.1169 43.0337 25.0232 43.0337C26.9338 43.0337 27.4893 44.0609 29.1474 44.0312C30.8728 44.0015 31.9544 42.4776 32.998 40.9197C34.2016 39.1496 34.694 37.4389 34.7235 37.3498C34.694 37.3158 31.3989 36.0424 31.3694 32.2177C31.3357 29.0171 33.9575 27.4932 34.0796 27.3998C32.5982 25.1925 30.2921 24.9463 29.4925 24.8826C29.3636 24.8745 29.2344 24.8716 29.1053 24.8741V24.8784ZM63.6305 26.5636C59.4642 26.5636 56.8719 28.8261 56.6783 31.8951H59.9482C60.2512 30.3755 61.5011 29.4076 63.5042 29.4076C65.6168 29.4076 66.8835 30.5368 66.8835 32.4257V33.7374L62.267 34.0091C58.2649 34.2383 56.005 36.0636 56.005 39.035C56.005 42.0913 58.3112 44.1585 61.6105 44.1585C63.8241 44.1585 65.9535 42.9657 66.9298 41.0725H67.0098V43.8699H70.326V32.1541C70.326 28.7454 67.7168 26.5636 63.6305 26.5636ZM71.7947 26.8692L77.8799 43.8869C77.8799 43.8996 77.5727 44.9056 77.5727 44.9354C77.0467 46.6758 76.184 47.3592 74.5806 47.3592C74.2902 47.3592 73.7137 47.3592 73.457 47.2955V50.1226C73.7095 50.1693 74.5806 50.2032 74.8668 50.2032C78.3597 50.2032 80.0262 48.8788 81.4654 44.7571L87.7779 26.8692H84.1251L79.8662 40.7032H79.8031L75.5401 26.865L71.7947 26.8692ZM66.8835 36.1612V37.5026C66.8835 39.7142 64.9898 41.3951 62.5742 41.3951C60.7141 41.3951 59.4979 40.4273 59.4979 38.9374C59.4979 37.4856 60.6678 36.5602 62.7341 36.4202L66.8835 36.1612Z"
+									fill="white" />
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="89"
+								height="57"
+								viewBox="0 0 89 57"
+								fill="none">
+								<g clip-path="url(#clip0_1_235)">
+									<path
+										d="M38.7722 13.1256V38.273H42.0013V28.0865H47.3405C49.5382 28.0865 51.386 27.3721 52.8875 25.9435C53.635 25.2734 54.2288 24.4497 54.6283 23.5288C55.0277 22.6078 55.2234 21.6114 55.2018 20.6078C55.217 19.6094 55.0184 18.6193 54.6192 17.7041C54.22 16.7888 53.6296 15.9695 52.8875 15.3014C52.1527 14.5898 51.2842 14.0308 50.3321 13.6567C49.38 13.2826 48.3633 13.1009 47.3405 13.1219L38.7722 13.1256ZM47.6175 16.2235C48.1811 16.2333 48.7369 16.3561 49.2521 16.5846C49.7673 16.8131 50.2314 17.1426 50.617 17.5537C51.0276 17.9531 51.354 18.4308 51.5769 18.9585C51.7998 19.4862 51.9146 20.0532 51.9146 20.6261C51.9146 21.1989 51.7998 21.7659 51.5769 22.2936C51.354 22.8213 51.0276 23.299 50.617 23.6984C50.2042 24.1259 49.7066 24.4624 49.1562 24.6864C48.6058 24.9105 48.0147 25.0171 47.4207 24.9995H42.0013V16.2235H47.4207C47.4863 16.2219 47.5519 16.2219 47.6175 16.2235ZM62.6476 20.5058C59.5789 20.5058 57.2646 21.6283 55.6975 23.877L58.5439 25.6665C59.5935 24.1467 61.0222 23.385 62.8262 23.385C63.9772 23.3708 65.0912 23.7912 65.946 24.5622C66.3668 24.9101 66.7048 25.3474 66.9355 25.8423C67.1662 26.3371 67.2839 26.8772 67.2799 27.4231V28.1593C66.0407 27.4559 64.459 27.1061 62.542 27.1061C60.2933 27.1061 58.4965 27.6345 57.1517 28.6878C55.8032 29.7374 55.1326 31.1552 55.1326 32.9337C55.1179 33.7341 55.2821 34.5276 55.6131 35.2565C55.9441 35.9854 56.4337 36.6312 57.046 37.1468C58.3216 38.2693 59.907 38.8342 61.8021 38.8342C64.0253 38.8342 65.8038 37.8502 67.1414 35.8821H67.2799V38.2693H70.3704V27.6673C70.3704 25.4442 69.678 23.6948 68.3003 22.4192C66.9154 21.1436 65.0348 20.5058 62.6476 20.5058ZM70.8953 21.0671L77.9875 37.1832L73.9858 45.8573H77.3206L88.1048 21.0634H84.5878L79.6021 33.4221H79.5292L74.405 21.0671H70.8953ZM63.0741 29.6973C64.8745 29.6973 66.2813 30.0982 67.2872 30.9C67.2872 32.2558 66.7514 33.4367 65.6836 34.4462C64.7198 35.4102 63.4131 35.9528 62.0499 35.955C61.1391 35.9724 60.2505 35.6736 59.5352 35.1095C59.2024 34.8687 58.9319 34.552 58.7461 34.1856C58.5604 33.8192 58.4648 33.4137 58.4673 33.003C58.4673 32.0663 58.9047 31.29 59.7903 30.6449C60.665 30.0144 61.7584 29.6973 63.0704 29.6973H63.0741Z"
+										fill="white" />
+									<path
+										d="M29.709 23.9261H28.615V23.8697H16.391V29.3026H24.067C22.9471 32.4652 19.938 34.7354 16.391 34.7354C11.8906 34.7354 8.2417 31.0866 8.2417 26.5861C8.2417 22.0857 11.8906 18.4368 16.391 18.4368C18.4684 18.4368 20.3584 19.2205 21.7974 20.5006L25.6391 16.6589C23.2133 14.3982 19.9685 13.004 16.391 13.004C8.89025 13.004 2.80884 19.0854 2.80884 26.5861C2.80884 34.0869 8.89025 40.1683 16.391 40.1683C23.8918 40.1683 29.9732 34.0869 29.9732 26.5861C29.9732 25.6754 29.8795 24.7865 29.709 23.9261Z"
+										fill="#FFC107" />
+									<path
+										d="M4.37524 20.2643L8.83766 23.5369C10.0451 20.5475 12.9694 18.4368 16.3914 18.4368C18.4688 18.4368 20.3587 19.2205 21.7978 20.5006L25.6395 16.6589C23.2137 14.3982 19.9689 13.004 16.3914 13.004C11.1745 13.004 6.65026 15.9493 4.37524 20.2643Z"
+										fill="#FF3D00" />
+									<path
+										d="M16.3906 40.1685C19.8989 40.1685 23.0866 38.8259 25.4968 36.6425L21.2931 33.0854C19.8836 34.1573 18.1613 34.737 16.3906 34.7356C12.8579 34.7356 9.85825 32.483 8.72822 29.3394L4.29907 32.7519C6.54692 37.1505 11.1119 40.1685 16.3906 40.1685Z"
+										fill="#4CAF50" />
+									<path
+										d="M29.7091 23.9261H28.6151V23.8697H16.3911V29.3026H24.0671C23.5314 30.8077 22.5665 32.123 21.2916 33.0859L21.2936 33.0845L25.4973 36.6417C25.1998 36.912 29.9733 33.3772 29.9733 26.5861C29.9733 25.6754 29.8796 24.7865 29.7091 23.9261Z"
+										fill="#1976D2" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_235">
+										<rect
+											width="87.4691"
+											height="56.9753"
+											fill="white"
+											transform="translate(0.635742 -0.00012207)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="108"
+								height="65"
+								viewBox="0 0 108 65"
+								fill="none">
+								<g clip-path="url(#clip0_1_248)">
+									<path
+										d="M88.76 10.1282L88.9702 22.0807H88.8668L85.3914 10.1282H79.6948V25.1845H83.4636L83.2535 12.8158H83.3569L87.0757 25.1845H92.5289V10.1282H88.76ZM16.9485 10.1282L14.1002 25.341H18.2159L20.3171 11.5003H20.4038L22.455 25.341H26.5374L23.7224 10.1282H16.9485ZM39.9818 10.1282L38.1041 21.731H38.0007L36.1063 10.1282H29.886L29.5892 25.341H33.4114L33.5148 11.6568H33.5481L36.1029 25.341H39.9752L42.53 11.6568H42.6334L42.7368 25.341H46.559L46.1954 10.1282H39.9818ZM7.66981 21.0216C7.82657 21.368 7.7732 21.8875 7.72317 22.1306C7.61978 22.6502 7.2529 23.153 6.24565 23.153C5.27176 23.153 4.7181 22.5969 4.7181 21.7843V20.309H0.635742V21.4712C0.635742 24.8881 3.3273 25.8939 6.19562 25.8939C8.94055 25.8939 11.2319 24.9414 11.5987 22.4437C11.8089 21.1249 11.6521 20.259 11.5987 19.946C10.885 16.7355 5.06831 15.8364 4.66807 14.048C4.61425 13.7787 4.61425 13.5014 4.66807 13.2321C4.77147 12.7292 5.11833 12.2097 6.03887 12.2097C6.9594 12.2097 7.46302 12.7658 7.46302 13.5784V14.4976H11.2852V13.4385C11.2852 10.1249 8.28016 9.62201 6.14226 9.62201C3.43069 9.62201 1.19273 10.5245 0.7925 12.969C0.654556 13.6469 0.672804 14.3473 0.845864 15.0171C1.45288 18.1576 6.90937 19.0767 7.67315 21.0183L7.66981 21.0216ZM57.2652 21.0216C57.4219 21.368 57.3686 21.8376 57.3185 22.1306C57.2151 22.6502 56.8483 23.153 55.841 23.153C54.8671 23.153 54.3135 22.5969 54.3135 21.7843V20.309H50.2311V21.4712C50.2311 24.8348 52.8726 25.8606 55.7376 25.8606C58.4825 25.8606 60.7238 24.9414 61.0874 22.3904C61.2975 21.0716 61.1407 20.2557 61.0874 19.8927C60.4804 16.7355 54.7137 15.7831 54.3135 14.048C54.2596 13.7787 54.2596 13.5014 54.3135 13.2321C54.4002 12.7292 54.7637 12.2097 55.6842 12.2097C56.5514 12.2097 57.1084 12.7658 57.1084 13.5784V14.4976H60.8773V13.4385C60.8773 10.1249 57.9255 9.62201 55.7876 9.62201C53.0761 9.62201 50.8881 10.4712 50.4879 12.969C50.3845 13.6284 50.3845 14.2511 50.5213 15.0171C51.1483 18.1576 56.4981 19.0235 57.2618 21.0183L57.2652 21.0216ZM70.1026 23.0531C71.1799 23.0531 71.4734 22.3404 71.5801 21.9441C71.6335 21.7876 71.6335 21.5278 71.6335 21.3713V10.1315H75.5057V21.0749C75.5057 21.3713 75.5057 21.9408 75.4523 22.0807C75.2089 24.9414 72.9509 25.8606 70.1526 25.8606C67.3543 25.8606 65.1164 24.9414 64.8529 22.0807C64.8529 21.9408 64.7995 21.368 64.7995 21.0749V10.1315H68.6718V21.3713C68.6718 21.5811 68.6718 21.7876 68.7251 21.9441C68.7251 22.3438 69.0386 23.0531 70.0959 23.0531H70.1026ZM101.911 22.8966C103.042 22.8966 103.389 22.1839 103.492 21.7876C103.545 21.6311 103.545 21.3713 103.545 21.2315V19.0301H101.964V16.7922H107.367V20.8685C107.367 21.1815 107.367 21.3713 107.314 21.8909C107.054 24.685 104.656 25.6541 101.964 25.6541C99.2528 25.6541 96.8747 24.6816 96.6146 21.8909C96.5612 21.3713 96.5612 21.1782 96.5612 20.8685V14.451C96.5612 14.2078 96.6146 13.6883 96.6146 13.4452C96.9615 10.5845 99.2561 9.6653 101.964 9.6653C104.656 9.6653 107.001 10.5845 107.314 13.4452C107.367 13.8948 107.367 14.451 107.367 14.451V14.9705H103.545V14.1046C103.545 14.1046 103.545 13.7416 103.492 13.5318C103.439 13.1854 103.128 12.4228 101.964 12.4228C100.834 12.4228 100.54 13.1355 100.437 13.5318C100.383 13.7416 100.383 14.0014 100.383 14.2611V21.2348C100.383 21.4246 100.383 21.6344 100.437 21.7909C100.437 22.1906 100.837 22.8999 101.914 22.8999L101.911 22.8966Z"
+										fill="white" />
+									<path
+										d="M34.1787 33.9035V54.4862H36.8134V46.1487H41.1699C42.963 46.1487 44.4706 45.5641 45.6958 44.3947C46.3057 43.8463 46.7902 43.1721 47.1161 42.4183C47.442 41.6646 47.6017 40.849 47.5841 40.0276C47.5965 39.2104 47.4344 38.4 47.1087 37.6509C46.783 36.9018 46.3012 36.2312 45.6958 35.6843C45.0962 35.1019 44.3876 34.6444 43.6107 34.3382C42.8339 34.032 42.0043 33.8833 41.1699 33.9005L34.1787 33.9035ZM41.3959 36.439C41.8556 36.4471 42.3092 36.5476 42.7295 36.7346C43.1499 36.9216 43.5286 37.1914 43.8432 37.5278C44.1782 37.8548 44.4446 38.2457 44.6264 38.6776C44.8083 39.1096 44.902 39.5737 44.902 40.0425C44.902 40.5114 44.8083 40.9755 44.6264 41.4074C44.4446 41.8393 44.1782 42.2303 43.8432 42.5572C43.5064 42.907 43.1004 43.1825 42.6513 43.3659C42.2022 43.5493 41.7199 43.6365 41.2353 43.6221H36.8134V36.439H41.2353C41.2888 36.4378 41.3423 36.4378 41.3959 36.439ZM53.6593 39.9441C51.1555 39.9441 49.2672 40.8628 47.9885 42.7034L50.311 44.168C51.1674 42.9241 52.3331 42.3007 53.8051 42.3007C54.7442 42.2891 55.6531 42.6331 56.3505 43.2642C56.6939 43.5489 56.9697 43.9068 57.1579 44.3119C57.3462 44.7169 57.4422 45.1589 57.4389 45.6058V46.2084C56.4278 45.6327 55.1373 45.3463 53.5731 45.3463C51.7383 45.3463 50.2723 45.7788 49.175 46.6409C48.0748 47.5 47.5276 48.6604 47.5276 50.1161C47.5157 50.7712 47.6496 51.4207 47.9197 52.0173C48.1898 52.6139 48.5892 53.1424 49.0888 53.5645C50.1296 54.4832 51.4231 54.9456 52.9695 54.9456C54.7834 54.9456 56.2346 54.1402 57.3259 52.5294H57.4389V54.4832H59.9606V45.8057C59.9606 43.986 59.3956 42.5542 58.2715 41.5102C57.1415 40.4661 55.6071 39.9441 53.6593 39.9441ZM60.3888 40.4035L66.1756 53.5943L62.9105 60.6939H65.6314L74.4306 40.4005H71.561L67.4929 50.5158H67.4335L63.2525 40.4035H60.3888ZM54.0073 47.4672C55.4763 47.4672 56.6241 47.7953 57.4449 48.4516C57.4449 49.5613 57.0077 50.5278 56.1364 51.3541C55.3501 52.1431 54.2839 52.5872 53.1717 52.589C52.4285 52.6032 51.7034 52.3587 51.1198 51.897C50.8483 51.6999 50.6275 51.4406 50.476 51.1408C50.3244 50.8409 50.2465 50.509 50.2485 50.1728C50.2485 49.4062 50.6054 48.7708 51.328 48.2428C52.0417 47.7267 52.9338 47.4672 54.0043 47.4672H54.0073Z"
+										fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_248">
+										<rect
+											width="106.728"
+											height="65"
+											fill="white"
+											transform="translate(0.635742 -0.000244141)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+
+						<button class="dont_have_crypto_button">Buy Crypto</button>
+					</div>
+				</div>
+			</section>
+		</section>
+		@@include('html/_footer.htm',{}) @@include('html/_mobile-menu.htm',{})@@include('html/_js.htm',{})
+
+		<!-- Initialize Swiper -->
+
+		<script>
+			$(document).ready(function () {
+				$('select').each(function () {
+					var $this = $(this),
+						numberOfOptions = $(this).children('option').length;
+
+					$this.addClass('select-hidden');
+					$this.wrap('<div class="select"></div>');
+					$this.after('<div class="select-styled"></div>');
+
+					var $styledSelect = $this.next('div.select-styled');
+					$styledSelect.text($this.children('option').eq(0).text());
+
+					var $list = $('<ul />', {
+						class: 'select-options',
+					}).insertAfter($styledSelect);
+
+					for (var i = 0; i < numberOfOptions; i++) {
+						$('<li />', {
+							text: $this.children('option').eq(i).text(),
+							rel: $this.children('option').eq(i).val(),
+						}).appendTo($list);
+						if ($this.children('option').eq(i).is(':selected')) {
+							$('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected');
+						}
+					}
+
+					var $listItems = $list.children('li');
+
+					$styledSelect.click(function (e) {
+						e.stopPropagation();
+						$('div.select-styled.active')
+							.not(this)
+							.each(function () {
+								$(this).removeClass('active').next('ul.select-options').hide();
+							});
+						$(this).toggleClass('active').next('ul.select-options').toggle();
+					});
+
+					$listItems.click(function (e) {
+						e.stopPropagation();
+						$styledSelect.text($(this).text()).removeClass('active');
+						$this.val($(this).attr('rel'));
+						$list.find('li.is-selected').removeClass('is-selected');
+						$list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+						$list.hide();
+
+						var currentUrl = window.location.href;
+						var parts = currentUrl.split('/');
+						var currentLanguage = '/' + parts[3];
+						var newUrl = currentUrl.replace(currentLanguage, '/' + $(this).attr('rel'));
+						window.location.href = newUrl;
+						//console.log($this.val());
+					});
+				});
+
+				$('#toggle_menu_button').on('click', function () {
+					$('#navigation').fadeToggle();
+					$('.navigation-overlay-mobile').fadeToggle();
+				});
+				$('.navigation-overlay-mobile').on('click', function () {
+					$('#navigation').fadeToggle();
+					$('.navigation-overlay-mobile').fadeToggle();
+				});
+
+				$('.login_window-overlay').on('click', function () {
+					$('.login_window_container').fadeOut();
+				});
+				$('.login_window-header-close').on('click', function () {
+					$('.login_window_container').fadeOut();
+				});
+
+				$('#register_window-form_submit').on('click', function (e) {
+					e.preventDefault();
+				});
+				$('#login_window-form_submit').on('click', function (e) {
+					e.preventDefault();
+
+					let data = {
+						login: $('#login_window-form_login').val(),
+						password: $('#login_window-form_password').val(),
+					};
+
+					fetch('/api/auth/login', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify(data),
+					})
+						.then((response) => response.json())
+						.then((response) => {
+							console.log(response);
+
+							if (response.status === 400) {
+								$('.login_window-form-error-text').text(response.error);
+							} else if (response.status === 200) {
+								// localStorage.token = response.token;
+								// window.location = "/";
+
+								$('#headerWindowAuthLoginForm').submit();
+							} else {
+								$('.login_window-form-error-text').text('Error...');
+							}
+						});
+				});
+
+				$('#log_in_button').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'none');
+					$('#headerWindowAuthLoginForm').css('display', 'block');
+
+					$('#headerWindowAuthLoginButton').addClass('active');
+					$('#headerWindowAuthRegisterButton').removeClass('active');
+
+					$('.login_window_container').fadeIn();
+				});
+				$('#register_in_button').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'block');
+					$('#headerWindowAuthLoginForm').css('display', 'none');
+
+					$('#headerWindowAuthRegisterButton').addClass('active');
+					$('#headerWindowAuthLoginButton').removeClass('active');
+
+					$('.login_window_container').fadeIn();
+				});
+
+				$('#headerWindowAuthRegisterButton').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'block');
+					$('#headerWindowAuthLoginForm').css('display', 'none');
+					$(this).addClass('active');
+					$('#headerWindowAuthLoginButton').removeClass('active');
+				});
+				$('#headerWindowAuthLoginButton').on('click', function () {
+					$('#headerWindowAuthRegisterForm').css('display', 'none');
+					$('#headerWindowAuthLoginForm').css('display', 'block');
+					$(this).addClass('active');
+					$('#headerWindowAuthRegisterButton').removeClass('active');
+				});
+
+				$('.select-styled').removeClass('active');
+				$('.select-options').css('display', 'none');
+			});
+		</script>
+	</body>
+</html>
