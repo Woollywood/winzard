@@ -397,6 +397,7 @@
 }
 
 .club-rank {
+	overflow: hidden;
 	margin-top: -5%;
 	@media (min-width: em(1239.98)) {
 		display: grid;
