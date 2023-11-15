@@ -2505,37 +2505,65 @@
                     }
                 });
             }
-            if (document.querySelector(".bannersSwiper")) {
-                new Swiper(".bannersSwiper", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: "auto",
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true
-                    },
+            if (document.querySelector(".section-slider__slider")) {
+                let prevSlide = null;
+                let nextSlide = null;
+                let currentSlide = null;
+                const bodyContent = document.querySelector(".body-content");
+                new Swiper(".section-slider__slider", {
+                    centeredSlides: false,
+                    spaceBetween: 16,
                     pagination: {
-                        el: ".swiper-pagination"
+                        el: ".section-slider__pagination"
                     },
                     breakpoints: {
                         320: {
-                            slidesPerView: 1
+                            centeredSlides: true,
+                            slidesPerView: 1,
+                            initialSlide: 1
                         },
-                        768: {
+                        767.98: {
                             slidesPerView: 2
                         },
-                        1024: {
-                            effect: "default",
-                            centeredSlides: false,
+                        991.98: {
                             slidesPerView: 3,
                             spaceBetween: 20
                         }
+                    },
+                    on: {
+                        init: event => {
+                            setInterval((() => {
+                                if (bodyContent.offsetWidth > 767.98) currentSlides(event.slides);
+                            }), 1e3);
+                        },
+                        slideChange: event => {
+                            if (bodyContent.offsetWidth < 767.98) centeredSlide(event.activeIndex, event.slides);
+                        }
                     }
                 });
+                function centeredSlide(index, slides) {
+                    clearSliders();
+                    prevSlide = slides[index - 1];
+                    nextSlide = slides[index + 1];
+                    currentSlide = slides[index];
+                    stylingSliders();
+                }
+                function stylingSliders() {
+                    if (prevSlide) prevSlide.style.transform = "translateX(10%) translateY(10px)";
+                    if (nextSlide) nextSlide.style.transform = "translateX(-10%) translateY(10px)";
+                    if (currentSlide) currentSlide.style.zIndex = 1;
+                }
+                function clearSliders() {
+                    if (prevSlide) prevSlide.style.transform = "";
+                    if (nextSlide) nextSlide.style.transform = "";
+                    if (currentSlide) currentSlide.style.zIndex = "";
+                }
+                function currentSlides(slides) {
+                    slides.forEach((slide => {
+                        slide.style.transform = "";
+                        slide.style.zIndex = "";
+                    }));
+                }
             }
             const gameSlider = document.querySelectorAll("[data-game-slider]");
             gameSlider.forEach((slider => {
