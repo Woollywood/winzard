@@ -19,6 +19,21 @@
 	letter-spacing: 0.1px;
 }
 
+.button-main {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: rem(16) rem(24);
+	border-radius: 10px;
+	background: linear-gradient(145deg, #ec8d48 -0.24%, #ec742d 33.14%, #ed683e 98.36%);
+	box-shadow: 0px 8px 12px 0px cl('black-1', 0.02);
+
+	color: cl('white-1');
+	@include adaptiveValue("font-size", 16, 14, 0, 1920, 568);
+	font-weight: 600;
+	line-height: 125%;
+}
+
 .button-secondary {
 	display: inline-flex;
 	justify-content: center;
