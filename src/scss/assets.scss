@@ -304,6 +304,23 @@ a {
 
 	overflow-x: auto;
 }
+.games_list_center {
+	flex: 1 1 auto;
+}
+.games_list_search {
+	flex: 0 0 rem(214);
+	padding: rem(16);
+	padding-right: rem(20);
+
+	@media (max-width: $tablet) {
+		flex: 0 0 rem(180);
+	}
+
+	@media (max-width: $mobile) {
+		padding: rem(12) rem(16);
+		flex: 0 0 rem(160);
+	}
+}
 .games_list_categories_list_item-counter {
 	border-radius: 4px;
 	background: rgba(255, 255, 255, 0.2);
@@ -355,6 +372,12 @@ a {
 	align-items: center;
 
 	margin-top: 30px;
+}
+.games_list_types_list_center {
+	flex: 1 1 auto;
+}
+.games_list_types_list_right {
+	flex: 0 0 rem(230);
 }
 .games_list_types_list_item {
 	display: block;

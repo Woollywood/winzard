@@ -121,7 +121,7 @@ flsForms.formFieldsInit({
 /* Модуль звездного рейтинга*/
 // flsForms.formRating();
 /* Модуль работы с select.*/
-// import './custom/select.js'
+import './custom/select.js'
 /* Модуль работы с календарем*/
 // import './libs/datepicker.js'
 /* (в работе) Модуль работы с масками.*/

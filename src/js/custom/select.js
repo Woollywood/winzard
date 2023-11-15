@@ -382,7 +382,20 @@ class SelectConstructor {
 					? ` ${this.getSelectedOptionsData(originalSelect).elements[0].dataset.class}`
 					: "";
 			// Выводим текстовое значение
-			return `<button type="button" class="${this.selectClasses.classSelectTitle}"><span${pseudoAttribute} class="${this.selectClasses.classSelectValue}${pseudoAttributeClass}"><span class="${this.selectClasses.classSelectContent}${customClass}">${selectTitleValue}</span></span></button>`;
+			return `
+				<button type="button" class="${this.selectClasses.classSelectTitle}">
+					<span${pseudoAttribute} class="${this.selectClasses.classSelectValue}${pseudoAttributeClass}">
+						<svg class="select__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+							<path d="M15.9317 0.44323C15.8028 0.147863 15.5799 0.000159206 15.2618 0H0.737807C0.420134 0 0.196893 0.147863 0.0682816 0.44323C-0.0602502 0.753723 -0.00735105 1.01904 0.227217 1.23867L5.82145 6.84086V12.3635C5.82145 12.5607 5.89335 12.731 6.03702 12.8751L8.9417 15.784C9.07798 15.9278 9.24813 16 9.45245 16C9.54315 16 9.63766 15.9809 9.73602 15.9431C10.0312 15.8142 10.1788 15.5908 10.1788 15.2726V6.8409L15.7728 1.2387C16.0075 1.01908 16.0602 0.753842 15.9317 0.44323Z" fill="#657099"/>
+						</svg>
+						<span class="${this.selectClasses.classSelectContent}${customClass}">
+							${selectTitleValue}
+						</span>
+					</span>
+					<svg class="select__icon-dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+						<path d="M12.8087 10.3026C13.1086 10.6524 13.1086 11.2142 12.8087 11.5641C12.501 11.9231 11.9948 11.9231 11.6871 11.5641L8.13359 7.41837L4.58011 11.5641C4.27241 11.9231 3.76621 11.9231 3.45851 11.5641C3.15862 11.2142 3.15862 10.6524 3.45851 10.3026L7.57279 5.50257C7.88049 5.14359 8.38669 5.14359 8.69439 5.50257L12.8087 10.3026Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>`;
 		}
 	}
 	// Конструктор данных для значения заголовка
