@@ -6,8 +6,8 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231115223905" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20231115223905" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231115231429" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231115231429" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -299,17 +299,17 @@
 						<div class="section-slider__slider-wrapper swiper-wrapper">
 							<div class="section-slider__slide swiper-slide">
 								<div class="section-slider__slide-inner">
-									<picture><source srcset="img/section-slider/01.webp" type="image/webp"><img src="img/section-slider/01.jpg" alt="slider-image"></picture>
+									<picture><source srcset="img/section-slider/01.webp" type="image/webp"><img src="img/section-slider/01.jpg" alt="slider-image" /></picture>
 								</div>
 							</div>
 							<div class="section-slider__slide swiper-slide">
 								<div class="section-slider__slide-inner">
-									<picture><source srcset="img/section-slider/02.webp" type="image/webp"><img src="img/section-slider/02.jpg" alt="slider-image"></picture>
+									<picture><source srcset="img/section-slider/02.webp" type="image/webp"><img src="img/section-slider/02.jpg" alt="slider-image" /></picture>
 								</div>
 							</div>
 							<div class="section-slider__slide swiper-slide">
 								<div class="section-slider__slide-inner">
-									<picture><source srcset="img/section-slider/03.webp" type="image/webp"><img src="img/section-slider/03.jpg" alt="slider-image"></picture>
+									<picture><source srcset="img/section-slider/03.webp" type="image/webp"><img src="img/section-slider/03.jpg" alt="slider-image" /></picture>
 								</div>
 							</div>
 						</div>
@@ -327,16 +327,47 @@
 						<span class="games_list_categories_list_item-text"> All Games </span>
 						<span class="games_list_categories_list_item-counter">{{ $count }}</span>
 					</a>
-					@foreach($categories_list as $category)
-					<a href="#" class="games_list_categories_list_item">{{ $category }}</a>
-					@endforeach
+					<div class="games_list_center">
+						@foreach($categories_list as $category)
+						<a href="#" class="games_list_categories_list_item">{{ $category }}</a>
+						@endforeach
+					</div>
+					<div class="games_list_right">
+						<div class="games_list_search input-wrapper">
+							<input class="input" type="text" placeholder="Search for Games">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path d="M8.60018 16.1997C12.7976 16.1997 16.2004 12.7971 16.2004 8.59983C16.2004 4.40256 12.7976 1 8.60018 1C4.40272 1 1 4.40256 1 8.59983C1 12.7971 4.40272 16.1997 8.60018 16.1997Z" stroke="#576081" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M16.9999 17L15.3999 15.4" stroke="#576081" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+					</div>
 				</nav>
 
 				<nav class="games_list_types_list">
 					<a href="" class="games_list_types_list_item active">All</a>
-					@foreach($categories_list as $category)
-					<a href="" class="games_list_types_list_item">{{ $category }}</a>
-					@endforeach
+					<div class="games_list_types_list_center">
+						@foreach($categories_list as $category)
+						<a href="" class="games_list_types_list_item">{{ $category }}</a>
+						@endforeach
+					</div>
+					<div class="games_list_types_list_right">
+						<select name="form[]" data-class-modif="form">
+							<option selected>Select provider</optionvalue=>
+							<option>Play Son</option>
+							<option>Quick Spin</option>
+							<option>Progmatic Play</option>
+							<option>Quick Spin</option>
+							<option>Progmatic Play</option>
+							<option>Quick Spin</option>
+							<option>Progmatic Play</option>
+							<option>Quick Spin</option>
+							<option>Progmatic Play</option>
+							<option>Quick Spin</option>
+							<option>Progmatic Play</option>
+							<option>Quick Spin</option>
+							<option>Progmatic Play</option>
+						</select>
+					</div>
 				</nav>
 
 				<div class="games-wrapper">
@@ -1126,9 +1157,9 @@
 			Profile
 		</a>
 	</nav>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231115223905" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231115223905"></script>
-	<script src="js/app.min.js?_v=20231115223905"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231115231429" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231115231429"></script>
+	<script src="js/app.min.js?_v=20231115231429"></script>
 	;
 	</script>
 </body>
