@@ -69,11 +69,15 @@
 		color: cl('grey-8');
 		position: absolute;
 		top: calc(100% + rem(10));
-		width: 100%;
+		width: max(100%, rem(160));
 		border-radius: rem(10);
 		border-top: rem(1) solid cl('white-1', 0.04);
 		background-color: cl('black-2');
 		padding: rem(20);
+
+		@media (max-width: $mobile) {
+			padding: rem(12);
+		}
 	}
 	// .select__scroll
 	&__scroll {
@@ -86,6 +90,11 @@
 		gap: rem(20);
 		align-items: flex-start;
 		width: 100%;
+
+		@media (max-width: $mobile) {
+			max-height: rem(112);
+			gap: rem(12);
+		}
 
 		&::-webkit-scrollbar {
 			width: rem(2);
@@ -104,7 +113,7 @@
 	// .select__option
 	&__option {
 		color: cl('grey-8');
-		font-size: rem(14);
+		@include adaptiveValue("font-size", 14, 12, 0, 1920, 568);
 		font-weight: 500;
 		line-height: 114%;
 	}

@@ -370,8 +370,26 @@ a {
 .games_list_types_list {
 	display: flex;
 	align-items: center;
-
+	flex-wrap: wrap;
+	gap: rem(20);
+	@media (max-width: $mobile) {
+		gap: rem(24);
+		
+		.games_list_types_list_right {
+			flex: 0 0 rem(52);
+		}
+	}
 	margin-top: 30px;
+
+	
+	.select {
+		@media (max-width: $mobile) {
+			.select__content {
+				display: none;
+			}
+
+		}
+	}
 }
 .games_list_types_list_center {
 	flex: 1 1 auto;
