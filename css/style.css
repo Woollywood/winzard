@@ -708,6 +708,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.25rem;
   margin-top: 30px;
 }
 
@@ -4181,7 +4184,7 @@ textarea.input {
   color: var(--color-grey-8);
   position: absolute;
   top: calc(100% + 0.625rem);
-  width: 100%;
+  width: max(100%, 10rem);
   border-radius: 0.625rem;
   border-top: 0.0625rem solid rgba(var(--color-white-1--rgb), 0.04);
   background-color: var(--color-black-2);
@@ -4222,7 +4225,6 @@ textarea.input {
 
 .select__option {
   color: var(--color-grey-8);
-  font-size: 0.875rem;
   font-weight: 500;
   line-height: 114%;
 }
@@ -6460,6 +6462,10 @@ textarea.input {
     font-size: 0.875rem;
   }
 
+  .select__option {
+    font-size: 0.875rem;
+  }
+
   .title-h2 {
     font-size: 1.5rem;
   }
@@ -7767,6 +7773,29 @@ textarea.input {
             flex: 0 0 10rem;
   }
 
+  .games_list_types_list {
+    gap: 1.5rem;
+  }
+
+  .games_list_types_list .games_list_types_list_right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 3.25rem;
+            flex: 0 0 3.25rem;
+  }
+
+  .games_list_types_list .select .select__content {
+    display: none;
+  }
+
+  .select__options {
+    padding: 0.75rem;
+  }
+
+  .select__scroll {
+    max-height: 7rem;
+    gap: 0.75rem;
+  }
+
   .main-block__slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7916,6 +7945,10 @@ textarea.input {
 
   .button-blur {
     font-size: 0.875rem;
+  }
+
+  .select__option {
+    font-size: 0.75rem;
   }
 
   .main-block__body {
@@ -8524,6 +8557,20 @@ textarea.input {
     .button-blur {
       font-size: calc(
 				0.875rem + 0.125 * (100vw - 35.5rem) / 84.5
+			);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.6974852071rem  +  0.1479289941vw , 0.875rem )) {
+    .select__option {
+      font-size: clamp( 0.75rem , 0.6974852071rem  +  0.1479289941vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6974852071rem  +  0.1479289941vw , 0.875rem )) {
+    .select__option {
+      font-size: calc(
+				0.75rem + 0.125 * (100vw - 35.5rem) / 84.5
 			);
     }
 }
